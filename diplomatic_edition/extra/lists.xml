@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <teiHeader>
+    
+    <fileDesc>
+      
+      <titleStmt>
+        <title>The Edictus Rothari: a new critical edition based on select manuscripts</title>
+        <title>A glossary of Lombard words used in the text</title>
+        <principal>Marina Buzzoni</principal>
+        <principal>Roberto Rosselli Del Turco</principal>
+        <respStmt>
+          <resp>Encoding in TEI-conformant markup: </resp>
+          <name>Roberto Rosselli Del Turco</name>
+        </respStmt>
+        <respStmt>
+          <resp>General overview: </resp>
+          <name>Roberto Rosselli Del Turco</name>
+          <name>Marina Buzzoni</name>
+        </respStmt>
+        <respStmt>
+          <resp>Experimental EVT edition: </resp>
+          <name>Roberto Rosselli Del Turco</name>
+        </respStmt>
+      </titleStmt>
+      
+      <editionStmt>
+        <edition>Previous editions</edition>
+        <respStmt xml:id="azzara">
+          <resp>Editor</resp>
+          <name ref="#Azzara1992">Azzara-Gasparri</name>
+        </respStmt>
+        <respStmt xml:id="beyerle">
+          <resp>Editor</resp>
+          <name ref="#Beyerle1962a">Beyerle</name>
+        </respStmt>
+        <respStmt xml:id="bluhme">
+          <resp>Editor</resp>
+          <name ref="#Bluhme1868">Beyerle</name>
+        </respStmt>
+      </editionStmt>
+      
+      <extent>[??] kilobytes</extent>
+      
+      <publicationStmt>
+        <authority>Leges Langobardorum Project</authority>
+        <date>2014-</date>
+        <availability>
+          <p>Not to ricirculate. Contact the Leges Langobardorum Project researchers for more information.</p>
+        </availability>
+      </publicationStmt>
+      
+      <sourceDesc>
+        
+        <!-- ########## Lista delle persone ########## -->
+        
+        <!-- TODO -->
+        
+        <!-- 
+        
+          - inserire i riferimenti LOD in maniera più sistematica nelle voci (= non semplicemente in nota), ad esempio:
+          
+            <idno type="wikidata-id">Q868</idno>
+            <idno type="VIAF">7524651</idno>
+            
+            meglio però includere l'URL? <idno source="http://viaf.org/viaf/7524651" type="VIAF">7524651</idno>
+            oppure: <idno type="URI" subtype="VIAF">http://viaf.org/viaf/7524651</idno>
+          - nelle note mantenere i riferimenti a testi enciclopedici e simili, basta che siano human readable 
+            (= Wikipedia sì, DBpedia no)
+          - inserire i <floruit> mancanti 
+          
+        -->
+
+        <listPerson>
+          <head>Person list</head>
+
+          <person xml:id="Alboin">
+            <persName>Alboin</persName>
+            <persName xml:lang="gmc">Elfwini</persName>
+            <persName xml:lang="lat">Alboinus</persName>
+            <persName xml:lang="ita">Alboino</persName>
+            <persName xml:lang="eng">Alboin</persName>
+            <idno source="https://viaf.org/viaf/80322103/" type="VIAF">80322103</idno>
+            <idno source="https://isni.org/isni/0000000078816780" type="ISNI">78816780</idno>
+            <idno source="https://d-nb.info/gnd/135880882" type="DNB">135880882</idno>
+            <idno source="https://www.wikidata.org/wiki/Q152877" type="WKD">Q152877</idno>
+            <sex>M</sex>
+            <birth>530</birth>
+            <death>572</death>
+            <floruit>560-572</floruit>
+            <occupation>Rex Langobardorum 560-572</occupation>
+            <note>Figlio di Audoino, re dei Longobardi, e di Rodelinda, salì al trono fra il 560 e il 565. V. la voce
+              corrispondente sul <ref target="http://www.treccani.it/enciclopedia/re-dei-longobardi-alboino_(Dizionario-Biografico)"
+                >Dizionario Biografico degli italiani</ref> e su <ref target="http://dbpedia.org/resource/Alboin"
+                >DBpedia</ref>.
+            </note>
+          </person>
+
+          <person source="http://www.treccani.it/enciclopedia/rotari_(Dizionario-Biografico)" xml:id="Rothari">
+            <persName>Rotari</persName>
+            <idno source="http://viaf.org/viaf/32793340" type="VIAF">32793340</idno>
+            <idno source="https://isni.org/isni/0000000078577492" type="ISNI">78577492</idno>
+            <idno source="http://d-nb.info/gnd/118819615" type="DNB">118819615</idno>
+            <idno source="https://www.wikidata.org/wiki/Q312621" type="WKD">Q312621</idno>
+            <sex>M</sex>
+            <birth>606</birth>
+            <death>652</death>
+            <floruit>636-652</floruit>
+            <occupation>Rex Langobardorum et Italiae 636-652</occupation>
+            <note>Duca longobardo di Brescia, nato agli inizi del VII secolo, nel 636 venne eletto re dei Longobardi
+              dopo la morte del predecessore Arioaldo. V. anche la voce corrispondente sul <ref
+              target="http://www.treccani.it/enciclopedia/rotari_(Dizionario-Biografico)">Dizionario Biografico degli
+              italiani</ref> e su <ref target="http://dbpedia.org/page/Rotari">DBpedia</ref>.
+            </note>
+          </person>
+          
+          <!-- #### aggiunto da FS in data 2024-04-13 #### -->
+          <person source="https://www.treccani.it/enciclopedia/astolfo-re-dei-longobardi/" xml:id="Aistulf">
+            <persName xml:lang="ita">Astolfo</persName>
+            <persName xml:lang="eng">Aistulf</persName>
+            <persName xml:id="lng">Astolf</persName>
+            <persName xml:lang="lat">Aistulfus</persName>
+            <idno source="http://viaf.org/viaf/273159474185027661658" type="VIAF">273159474185027661658</idno>
+            <idno source="https://d-nb.info/gnd/102419353" type="DNB">102419353</idno>
+            <idno source="https://www.wikidata.org/wiki/Q312504" type="WKD">Q312504</idno>
+            <sex>M</sex>
+            <birth></birth>
+            <death>756</death>
+            <floruit>749-756</floruit>
+            <occupation>Rex Langobardorum et Italiae 749-756</occupation>
+            <note>Duca del Friuli, fu eletto re nel 749 dopo aver provocato l'abdicazione del fratello
+              <ref target="#Ratchis">Rachi</ref>. V. anche la voce corrispondente
+              sul <ref target="https://www.treccani.it/enciclopedia/astolfo-re-dei-longobardi/">Dizionario Bibliografico degli italiani</ref> 
+              e su <ref target="https://dbpedia.org/page/Aistulf">DBpedia</ref>
+            </note>
+          </person>
+          
+          <person source="https://www.treccani.it/enciclopedia/grimoaldo_res-545d776b-87ee-11dc-8e9d-0016357eee51_%28Dizionario-Biografico%29/https://www.treccani.it/enciclopedia/re-dei-longobardi-grimoaldo_%28Dizionario-Biografico%29/" xml:id="Grimoald">
+            <persName xml:lang="ita">Grimoaldo</persName>
+            <persName xml:lang="lng">Grimoald</persName>
+            <idno source="http://viaf.org/viaf/42648108" type="VIAF">42648108</idno>
+            <idno source="https://d-nb.info/gnd/119427303" type="DNB">119427303</idno>
+            <sex>M</sex>
+            <birth>Inizio del VII secolo</birth>
+            <death>671</death>
+            <floruit>662-671</floruit>
+            <occupation>Rex Langoboardorum et Italiae 662-671</occupation>
+            <note>Nato in Friuli agli inizi del VII secolo, fu duca di <ref target="#Benevento" type="place">Benevento</ref> a partire dal 646-647 e divenne re dei 
+              Longobardi spodestando i figli di re Ariperto I nel 662. V. anche la voce corrispondente sul 
+              <ref target="https://www.treccani.it/enciclopedia/grimoaldo_res-545d776b-87ee-11dc-8e9d-0016357eee51_%28Dizionario-Biografico%29/https://www.treccani.it/enciclopedia/re-dei-longobardi-grimoaldo_%28Dizionario-Biografico%29/">
+                Dizionario Biografico degli italiani</ref>.</note>
+          </person>
+          
+          <person source="https://www.treccani.it/enciclopedia/liutprando-re-dei-longobardi/" xml:id="Liutprand">
+            <persName xml:lang="ita">Liutprando</persName>
+            <persName xml:lang="lng">Liutprand</persName>
+            <persName xml:lang="lat">Liutprandus</persName>
+            <idno source="http://viaf.org/viaf/47155269" type="VIAF">47155269</idno>
+            <idno source="https://isni.org/isni/0000000115857435" type="ISNI">0000000115857435</idno>
+            <idno source="https://d-nb.info/gnd/102517460" type="DNB">102517460</idno>
+            <idno source="https://www.wikidata.org/wiki/Q251836" type="WKD">Q251836</idno>
+            <sex>M</sex>
+            <birth>690 circa</birth>
+            <death>744</death>
+            <floruit>712-744</floruit>
+            <occupation>Rex Langobardorum et Italiae 712-744</occupation>
+            <note>Succedette al padre Ansprando nel 712. A partire dal 725 entrò in conflitto con i bizantini
+              e conquistò per un breve periodo l'esarcato di <ref target="#Ravenna" type="place">Ravenna</ref> (732). A partire dal 729 assunse il controllo
+              dei ducati di <ref target="#Spoleto" type="place">Spoleto</ref> e <ref target="#Benevento" type="place">Benevento</ref>, installando duchi a lui fedeli. V. anche la voce corrispondente
+              sul <ref target="https://www.treccani.it/enciclopedia/liutprando-re-dei-longobardi/">Dizionario Bibliografico degli italiani</ref> 
+              e su <ref target="https://dbpedia.org/page/Liutprand">DBpedia</ref>
+            </note>
+          </person>
+          
+          <person source="https://www.treccani.it/enciclopedia/rachi-re-dei-longobardi/" xml:id="Ratchis">
+            <persName xml:lang="ita">Rachi</persName>
+            <persName xml:lang="lat">Ratchis</persName>
+            <idno source="http://viaf.org/viaf/37720680" type="VIAF">37720680</idno>
+            <idno source="https://d-nb.info/gnd/119168219" type="DNB">119168219</idno>
+            <idno source="https://www.wikidata.org/wiki/Q312624" type="WKD">Q312624</idno>
+            <sex>M</sex>
+            <birth></birth>
+            <death></death>
+            <floruit>744-749</floruit>
+            <floruit>756-757</floruit>
+            <occupation>Rex Langoboardorum et Italiae 744-749 e 756-757</occupation>
+            <note>Duca del Friuli nell'VIII secolo, succedette al trono nel 744. Deposto dal partito militare
+              nel 749, si fece monaco e si ritirò a <ref target="#Montecassino" type="place">Montecassino</ref>. Morto il suo successore <ref target="#Aistulf" type="person">Astolfo</ref>, ritornò a <ref target="#Pavia" type="place">Pavia</ref> 
+              e fu nuovamente proclamato re nel 756. Il trono tuttavia gli fu conteso dal duca Desiderio, il quale
+              lo costrinse a ritornare a <ref target="#Montecassino" type="place">Montecassino</ref> (757). V. anche la voce corrispondente sul <ref target="https://www.treccani.it/enciclopedia/rachi-re-dei-longobardi/">Dizionario Biografico
+                degli italiani</ref> e <ref target="https://dbpedia.org/page/Ratchis">DBpedia</ref>.
+            </note>
+          </person>
+          
+          <person xml:id="Agilmund">
+            <persName xml:lang="ita">Agilmondo</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Agilmund</persName>
+            <sex>M</sex>
+            <floruit>IV-V secolo</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Primo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Gugincus">
+            <persName xml:lang="ita">Gugingo</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Gugincus</persName>
+            <sex>M</sex>
+            <note>Stirpe dei Guginghi, alla quale appartiene Agilmund, primo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Laamisio">
+            <persName xml:lang="ita">Lamissione</persName>
+            <persName xml:lang="ita">Lamissone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Lamisio</persName>
+            <sex>M</sex>
+            <floruit>V secolo</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Secondo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Leth">
+            <persName xml:lang="ita">Lethu</persName>
+            <persName xml:lang="ita">Leti</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Leth</persName>
+            <sex>M</sex>
+            <floruit>Prima metà del V secolo</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Terzo re dei Longobardi.</note>
+          </person>
+
+          <person xml:id="Geldehoc">
+            <persName xml:lang="ita">Ildeoc</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Geldehoc</persName>
+            <sex>M</sex>
+            <floruit>Seconda metà del V secolo</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Quarto re dei Longobardi, figlio di Leth.</note>
+          </person>
+          
+          <person xml:id="Godeoch">
+            <persName xml:lang="ita">Godeoc</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Godehoc</persName>
+            <sex>M</sex>
+            <floruit>Seconda metà del V secolo</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Quinto re dei Longobardi, figlio di Geldehoc.</note>
+          </person>
+          
+          <person xml:id="Gaffo">
+            <persName xml:lang="ita">Claffone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Claffo</persName>
+            <sex>M</sex>
+            <floruit>Fine del V secolo</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Sesto re dei Longobardi, figlio di Godehoc.</note>
+          </person>
+
+          <person xml:id="Tatto">
+            <persName xml:lang="ita">Tatone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Tato</persName>
+            <sex>M</sex>
+            <floruit>500-510 ca.</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Settimo re dei Longobardi, figlio di Claffo.</note>
+          </person>
+          
+          <person xml:id="Waccho">
+            <persName xml:lang="ita">Vacone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Wacho</persName>
+            <sex>M</sex>
+           <floruit>510-540 ca.</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Ottavo re dei Longobardi, figlio di Winigis e nipote di Tato</note>
+          </person>
+          
+          <person xml:id="Winigis">
+            <persName xml:lang="ita">Vinigi</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Winichis</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note>Figlio di Claffo, sesto re dei Longobardi, fratello di Tatone, 
+              settimo re dei Longobardi, padre di Vacone, ottavo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Walthari">
+            <persName xml:lang="ita">Valtari</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat"></persName>
+            <sex>M</sex>
+            <floruit>540 ca.-547</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <note>Nono re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Audoin">
+            <persName xml:lang="ita">Audoino</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Audoin</persName>
+            <sex>M</sex>
+            <floruit>547-560 ca.</floruit>
+            <occupation>Rex Langobardorum.</occupation>
+            <affiliation>Stirpe dei Gausi</affiliation>
+            <note>Decimo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Causus">
+            <persName xml:lang="ita">Gauso</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Causus</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note>Stirpe di Audoino e Alboino</note>
+          </person>
+          
+          <person xml:id="Clef">
+            <persName xml:lang="ita">Clefi</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Clep</persName>
+            <sex>M</sex>
+            <floruit>572-574</floruit>
+            <occupation>Rex Langobardorum et Italiae 572-574.</occupation>
+            <note>Dodicesimo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Beleos">
+            <persName xml:lang="ita">Beleos</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Beleos</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note>Stirpe di Clefi e Autari.</note>
+          </person>
+          
+          <person xml:id="Authari">
+            <persName xml:lang="ita">Autari</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Autarich</persName>
+            <sex>M</sex>
+            <floruit>584-590</floruit>
+            <occupation>Rex Langobardorum et Italiae 584-590.</occupation>
+            <note>Tredicesimo re dei Longobardi, figlio di Clefi, dodicesimo 
+            re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Aginulf"><!-- CHECK Agilulf? -->
+            <persName xml:lang="ita">Agilulfo</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Agilluf</persName>
+            <sex>M</sex>
+            <occupation>Rex Langobardorum et Italiae 591-616.</occupation>
+            <note>Quattordicesimo re dei Longobardi, </note>
+          </person>
+          
+          <person xml:id="Anawain">
+            <persName xml:lang="ita">Anawas</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Anawas</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note>Stirpe di Agilulfo, quattordicesimo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Adawald">
+            <persName xml:lang="ita">Adaloaldo</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Adaliuald</persName>
+            <sex>M</sex>
+            <occupation>Rex Langobardorum et Italiae 616-626.</occupation>
+            <note>Quindicesimo re dei Longobardi</note>
+          </person>
+          
+          <person xml:id="Arioald">
+            <persName xml:lang="ita">Arioaldo</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Arioald</persName>
+            <sex>M</sex>
+            <occupation>Rex Langobardorum et Italiae 626-636.</occupation>
+            <note>Sedicesimo re dei Longobardi</note>
+          </person>
+          
+          <person xml:id="Caupus">
+            <persName xml:lang="ita">Caupu</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Caupus</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note>Stirpe di Arioaldo, sedicesimo re dei Longobardi.</note>
+          </person>
+          
+          <person xml:id="Nanding">
+            <persName xml:lang="ita">Nandinig</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat"></persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Nozu">
+            <persName xml:lang="ita">Notzone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Nozu</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Alamund">
+            <persName xml:lang="ita">Adamundo</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Alamund</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Alaman">
+            <persName xml:lang="ita">Alaman</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Alaman</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Hilzo">
+            <persName xml:lang="ita">Hiltzone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Hilzo</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Weilo">
+            <persName xml:lang="ita">Wehilone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Weilo</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Weo">
+            <persName xml:lang="ita">Weone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Weo</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Frocho">
+            <persName xml:lang="ita">Fronchone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Frocho</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Facho">
+            <persName xml:lang="ita">Fachone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Facho</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Mammo">
+            <persName xml:lang="ita">Mammone</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Mammo</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+          <person xml:id="Obthora">
+            <persName xml:lang="ita">Ustbora</persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat">Obthora</persName>
+            <sex>M</sex>
+            <occupation></occupation>
+            <note></note>
+          </person>
+          
+<!--
+          <person source="" xml:id="">
+            <persName xml:lang="ita"></persName>
+            <persName xml:lang="lng"></persName>
+            <persName xml:lang="lat"></persName>
+            <idno source="" type="VIAF"></idno>
+            <idno source="" type="ISNI"></idno>
+            <idno source="" type="DNB"></idno>
+            <idno source="" type="WKD"></idno>
+            <sex></sex>
+            <birth></birth>
+            <death></death>
+            <floruit></floruit>
+            <occupation></occupation>
+            <note>V. anche la voce corrispondente
+              sul <ref target="">Dizionario Bibliografico degli italiani</ref> 
+              e su <ref target="">DBpedia</ref>
+            </note>
+          </person>
+-->
+
+        </listPerson>
+
+        <!-- ########## Lista dei luoghi ########## -->
+
+        <listPlace>
+
+          <place type="settlement_area" xml:id="Anthaib">
+            <!-- eliminato <region> spostando il type direttamente in <place> -->
+            <placeName source="#OrigoAuthor" type="norm">Anthaib</placeName>
+            <placeName source="#PaoloDiacono">Anthab</placeName>
+            <location cert="medium">
+              <offset n="1" type="generic">Southeast of</offset>
+              <region>Lüneburg Heath</region>
+              <offset n="2" type="between">between</offset>
+              <region>Hannover</region>
+              <region>Altmark</region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote>Et moverunt se exhinde Langobardi, et venerunt in <placeName>Golaidam</placeName>, et postea
+                  possiderunt aldonus <emph><placeName>Anthaib</placeName></emph> et <placeName>Bainaib</placeName> seu
+                  et <placeName>Burgundaib</placeName>.</quote>
+                <ref target="#origo_p_2">Origo 2</ref>
+              </cit>
+            </note>
+          </place>
+
+          <place xml:id="Bainaib">
+            <region type="settlement_area">
+              <placeName source="#OrigoAuthor" type="norm">Bainaib</placeName>
+              <placeName source="#PaoloDiacono">Banthaib</placeName>
+            </region>
+            <location cert="medium">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote>Et moverunt se exhinde Langobardi, et venerunt in <placeName ref="#Golaida">Golaidam</placeName>,
+                  et postea possiderunt aldonus <placeName ref="#Anthaib">Anthaib</placeName> et
+                  <emph><placeName>Bainaib</placeName></emph> seu et <placeName
+                    ref="#Burgundaib">Burgundaib</placeName>.</quote>
+                <ref target="#Origo_p_2">Origo 2</ref>
+              </cit>
+              <cit>
+                <quote>Egressi itaque Langobardi de <placeName>Mauringa</placeName>, applicuerunt in
+                  <placeName>Golandam</placeName>, ubi aliquanto tempore commorati, dicuntur post haec
+                  <placeName ref="#Anthaib">Anthab</placeName> et <emph><placeName>Banthaib</placeName></emph>, pari modo et
+                  <placeName ref="#Burgundaib">Vurgundaib</placeName>, per annos aliquot possedisse; quae nos arbitrari
+                  possumus esse vocabula pagorum seu quorumcumque locorum.</quote>
+                <ref target="#HistLang_I_11-13">Hist. Lang. I, 11-13</ref>
+              </cit>
+            </note>
+          </place>
+          
+          <place xml:id="Burgundaib">
+            <region type="settlement_area">
+              <placeName source="#OrigoAuthor" type="norm">Burgundaib</placeName>
+              <placeName source="#PaoloDiacono">Vurgundaib</placeName>
+            </region>
+            <location cert="medium">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote>Et moverunt se exhinde Langobardi, et venerunt in <placeName ref="#Golaida">Golaidam</placeName>,
+                  et postea possiderunt aldonus <placeName ref="#Anthaib">Anthaib</placeName> et <placeName
+                    ref="#Bainaib">Bainaib</placeName> seu et <emph><placeName>Burgundaib</placeName></emph>.</quote>
+                <ref target="#Origo_p_2">Origo 2</ref>
+              </cit>
+              <cit>
+                <quote>Egressi itaque Langobardi de <placeName>Mauringa</placeName>, applicuerunt in
+                  <placeName>Golandam</placeName>, ubi aliquanto tempore commorati, dicuntur post haec
+                  <placeName ref="#Anthaib">Anthab</placeName> et <placeName>Banthaib</placeName>, pari modo et
+                  <emph><placeName>Vurgundaib</placeName></emph>, per annos aliquot possedisse; quae nos arbitrari
+                  possumus esse vocabula pagorum seu quorumcumque locorum.</quote>
+                <ref target="#HistLang_I_11-13">Hist. Lang. I, 11-13</ref>
+              </cit>
+            </note>
+          </place>
+
+          <place xml:id="Golaida">
+            <region type="settlement_area">
+              <placeName source="#OrigoAuthor" type="norm">Golaida</placeName>
+              <placeName source="#PaoloDiacono">Golanda</placeName>
+            </region>
+            <location cert="high">
+              <region>Lüneburg Heath</region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote>Et moverunt se exhinde Langobardi, et venerunt in <emph><placeName>Golaidam</placeName></emph>,
+                  et postea possiderunt aldonus <placeName ref="#Anthaib">Anthaib</placeName> et <placeName
+                    ref="#Bainaib">Bainaib</placeName> seu et <placeName ref="#Burgundaib"
+                      >Burgundaib</placeName>.</quote>
+                <ref target="#Origo_p_2">Origo 2</ref>
+              </cit>
+              <cit>
+                <quote>Egressi itaque Langobardi de <placeName>Mauringa</placeName>, applicuerunt in
+                  <emph><placeName>Golandam</placeName></emph>, ubi aliquanto tempore commorati, dicuntur post haec
+                  <placeName ref="#Anthaib">Anthab</placeName> et <placeName>Banthaib</placeName>, pari modo et
+                  <placeName ref="#Burgundaib">Vurgundaib</placeName>, per annos aliquot possedisse; quae nos arbitrari
+                  possumus esse vocabula pagorum seu quorumcumque locorum.</quote>
+                <ref target="#HistLang_I_11-13">Hist. Lang. I, 11-13</ref>
+              </cit>
+            </note>
+          </place>
+
+          <place xml:id="Mauringa">
+            <region type="settlement_area">
+              <placeName>xxx</placeName>
+            </region>
+            <location cert="high">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote></quote>
+                <ref></ref>
+              </cit>
+            </note>
+          </place>
+
+          <place xml:id="Pannonia">
+            <region type="settlement_area">
+              <placeName>xxx</placeName>
+            </region>
+            <location cert="high">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote></quote>
+                <ref></ref>
+              </cit>
+            </note>
+          </place>
+
+          <place xml:id="Rugiland">
+            <region type="settlement_area">
+              <placeName>xxx</placeName>
+            </region>
+            <location cert="high">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote></quote>
+                <ref></ref>
+              </cit>
+            </note>
+          </place>
+          
+          <place xml:id="Scoringa">
+            <region type="settlement_area">
+              <placeName>xxx</placeName>
+            </region>
+            <location cert="high">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote></quote>
+                <ref></ref>
+              </cit>
+            </note>
+          </place>
+          
+          <!-- #### MODERNI #### -->
+          
+          <place xml:id="Brescia">
+            <placeName type="norm">Brescia</placeName>
+            <location cert="high">
+              <region>Lombardia</region>
+              <country type="modern">Italy</country>
+              <geo>45.53558, 10.21472</geo>
+            </location>
+            <idno subtype="GeoNames" type="URI">https://www.geonames.org/3181554/brescia.html</idno>
+            <note>
+              <cit>
+                <quote/>
+                <ref/>
+              </cit>
+            </note>
+          </place>
+          
+          <place xml:id="Pavia">
+            <placeName type="norm">Pavia</placeName>
+            <placeName>Papia</placeName>
+            <location cert="high">
+              <region>Lombardia</region>
+              <country type="modern">Italy</country>
+              <geo>45.19205, 9.15917</geo>
+            </location>
+            <idno subtype="GeoNames" type="URI">https://www.geonames.org/3171366/pavia.html</idno>
+            <note>
+              <cit>
+                <quote/>
+                <ref/>
+              </cit>
+            </note>
+          </place>
+          
+          <place xml:id="Ravenna">
+            <placeName>Ravenna</placeName>
+            <location cert="high">
+              <region>Emilia Romagna</region>
+              <country type="modern">Italy</country>
+              <geo>44.41344, 12.20121</geo>
+            </location>
+            <idno subtype="GeoNames" type="URI">https://www.geonames.org/3169561/ravenna.html</idno>
+            <note>
+              <cit>
+                <quote/>
+                <ref/>
+              </cit>
+            </note>
+          </place>
+
+          <place xml:id="xxx">
+            <region type="settlement_area">
+              <placeName>xxx</placeName>
+            </region>
+            <location cert="high">
+              <offset></offset>
+              <region></region>
+              <country type="modern">Germany</country>
+            </location>
+            <note>
+              <cit>
+                <quote></quote>
+                <ref></ref>
+              </cit>
+            </note>
+          </place>
+          
+          <!-- #### aggiunto da FS in data 2024-04-13 #### -->
+          
+          <place xml:id="Benevento">
+            <placeName>Benevento</placeName>
+            <location cert="high">
+              <region>Campania</region>
+              <country type="modern">Italy</country>
+              <geo>41.12952, 14.78614</geo>
+            </location>
+            <idno subtype="GeoNames" type="URI">https://www.geonames.org/3182179/benevento.html</idno>
+            <note>
+              <cit>
+                <quote/>
+                <ref/>
+              </cit>
+            </note>
+          </place>
+          
+          <place xml:id="Montecassino">
+            <placeName>Montecassino</placeName>
+            <location cert="high">
+              <region>Lazio</region>
+              <country type="modern">Italy</country>
+              <geo>41.48916, 13.81222</geo>
+            </location>
+            <idno subtype="GeoNames" type="URI">https://www.geonames.org/3173005/abbazia-di-montecassino.html</idno>
+            <note>
+              <cit>
+                <quote/>
+                <ref/>
+              </cit>
+            </note>
+          </place>
+          
+          <place xml:id="Spoleto">
+            <placeName>Spoleto</placeName>
+            <location cert="high">
+              <region>Umbria</region>
+              <country type="modern">Italy</country>
+              <geo>42.74071, 12.73899</geo>
+            </location>
+            <idno subtype="GeoNames" type="URI">https://www.geonames.org/3166236/spoleto.html</idno>
+            <note>
+              <cit>
+                <quote/>
+                <ref/>
+              </cit>
+            </note>
+          </place>
+
+        </listPlace>
+
+        <!-- ########## Lista dei popoli ########## -->
+
+        <listOrg>
+
+          <head>Lista dei popoli</head>
+
+          <org xml:id="Dani">
+            <orgName type="gens">Daci sive Dani</orgName>
+            <desc>Nome dato ai Normanni che attaccarono Luni.</desc>
+          </org>
+
+          <org xml:id="Franchi">
+            <orgName type="gens">Franci</orgName>
+            <desc>I Franchi furono uno dei popoli germanici occidentali che entrarono nel tardo Impero romano come
+              federati e stabilirono un reame duraturo, in Gallia, da loro chiamata Francia, e in parte dell'attuale
+              Germania.</desc>
+            <note>V. anche la voce corrispondente
+              sul <ref target="https://www.treccani.it/enciclopedia/franchi/">Enciclopedia Treccani</ref> 
+              e su <ref target="https://dbpedia.org/page/Franks">DBpedia</ref>
+            </note>
+          </org>
+
+          <org xml:id="Longobardi">
+            <orgName type="gens">Longobardi</orgName>
+            <desc>Popolazione germanica, già menzionata da Tacito e Strabone, che in seguito a un lungo percorso migratorio entra
+              in Italia nel 568 sotto la guida di re Alboino e crea un proprio regno.</desc>
+            <note>V. anche la voce corrispondente
+              sul <ref target="https://www.treccani.it/enciclopedia/longobardi/">Enciclopedia Treccani</ref> 
+              e su <ref target="https://dbpedia.org/page/Lombards">DBpedia</ref>
+            </note>
+          </org>
+
+        </listOrg>
+
+      </sourceDesc>
+      
+    </fileDesc>
+    
+    <encodingDesc>
+      <charDecl>
+
+        <!-- TODO -->
+        
+        <!-- 
+          
+           - <localProp> per i glifi relativi a legature?
+           - riorganizzare in base a sezioni, v. anche la <charDecl> del progetto MPP
+          
+         -->
+
+        <!-- regular letters -->
+
+        <char xml:id="ucap">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER U"/>
+          <mapping type="codepoint">U+0055</mapping>
+          <mapping type="diplomatic">U</mapping>
+          <mapping type="normalized">U</mapping>
+        </char>
+
+        <char xml:id="vcap">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER V"/>
+          <mapping type="codepoint">U+0056</mapping>
+          <mapping type="diplomatic">V</mapping>
+          <mapping type="normalized">V</mapping>
+        </char>
+
+        <char xml:id="u">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER U"/>
+          <mapping type="codepoint">U+0075</mapping>
+          <mapping type="diplomatic">u</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <char xml:id="v">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER V"/>
+          <mapping type="codepoint">U+0076</mapping>
+          <mapping type="diplomatic">v</mapping>
+          <mapping type="normalized">v</mapping>
+        </char>
+
+        <!-- variant forms -->
+
+        <char xml:id="romnumsix">
+          <unicodeProp name="Name" value="ROMAN NUMERAL SIX LATE FORM"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+2185</mapping>
+          <mapping type="diplomatic">Ϛ</mapping>
+          <mapping type="normalized">VI</mapping>
+        </char>
+        <!-- old version
+                <char xml:id="romnumsix">
+                    <unicodeProp name="Name" value="ROMAN NUMERAL SIX LATE FORM"/>
+                    <mapping subtype="MUFI-PUA" type="codepoint">U+EEFD</mapping>
+                    <mapping type="diplomatic">ↅ</mapping>
+                    <mapping type="normalized">ↅ</mapping>
+                </char>-->
+
+        <char xml:id="amacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER A WITH MACRON"/>
+          <mapping type="codepoint">U+0101</mapping>
+          <mapping type="diplomatic">ā</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+        <char xml:id="emacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER E WITH MACRON"/>
+          <mapping type="codepoint">U+0113</mapping>
+          <mapping type="diplomatic">ē</mapping>
+          <mapping type="normalized">e</mapping>
+        </char>
+        <char xml:id="imacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER I WITH MACRON"/>
+          <mapping type="codepoint">U+012B</mapping>
+          <mapping type="diplomatic">ī</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+        <char xml:id="omacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER O WITH MACRON"/>
+          <mapping type="codepoint">U+014D</mapping>
+          <mapping type="diplomatic">ō</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+        <char xml:id="umacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER U WITH MACRON"/>
+          <mapping type="codepoint">U+016B</mapping>
+          <mapping type="diplomatic">ū</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+        <char xml:id="ymacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Y WITH MACRON"/>
+          <mapping type="codepoint">U+0233</mapping>
+          <mapping type="diplomatic">ȳ</mapping>
+          <mapping type="normalized">y</mapping>
+        </char>
+
+        <glyph xml:id="Eunc">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER E UNCIAL FORM"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F10A</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">E</mapping>
+        </glyph>
+
+        <char xml:id="ltailstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER LUM"/>
+          <mapping type="codepoint">A772</mapping>
+          <mapping type="diplomatic">ꝲ</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <glyph xml:id="munc">
+          <localProp name="Name" value="LATIN SMALL LETTER UNCIAL M"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F225</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">m</mapping>
+        </glyph>
+        
+        <glyph xml:id="Munc">
+          <localProp name="Name" value="LATIN CAPITAL LETTER UNCIAL M"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F11A</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">M</mapping>
+        </glyph>
+        
+        <glyph xml:id="muncmacr">
+          <localProp name="Name" value="LATIN SMALL LETTER UNCIAL M WITH MACRON"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F225 U+0304</mapping>
+        	<mapping type="diplomatic">̄</mapping><!-- CHECK -->
+          <mapping type="normalized">m</mapping>
+        </glyph>
+        
+        <char xml:id="ntilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER N WITH TILDE"/>
+          <mapping type="codepoint">00F1</mapping>
+          <mapping type="diplomatic">ñ</mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <char xml:id="Ntilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER N WITH TILDE"/>
+          <mapping type="codepoint">U+00D1</mapping>
+          <mapping type="diplomatic">Ñ</mapping>
+          <mapping type="normalized">N</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="fourdot">
+          <unicodeProp name="Name" value="FOUR DOT PUNCTUATION"/>
+          <mapping type="codepoint">2058</mapping>
+          <mapping type="diplomatic">⁘</mapping>
+          <mapping type="normalized">.</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="arbar">
+          <unicodeProp name="Name" value="COMBINING ABBREVIATION MARK BAR ABOVE WITH DOT"/>
+          <mapping type="codepoint">F1C0</mapping>
+        	<mapping type="diplomatic"></mapping>
+          <mapping type="normalized">ae</mapping>
+        </char>
+
+        <char xml:id="penl">
+          <unicodeProp name="Name" value="LATIN ENLARGED LETTER SMALL P"/>
+          <mapping type="codepoint">U+EEF1</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="ptilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0070 + U+0303</mapping>
+          <mapping type="diplomatic">p̃</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <char xml:id="Ptilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER P WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0050 + U+0303</mapping>
+          <mapping type="diplomatic">P̃</mapping>
+          <mapping type="normalized">P</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="qtilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Q WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0071 + U+0303</mapping>
+          <mapping type="diplomatic">q̃</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <glyph xml:id="slong">
+          <localProp name="Name" value="LATIN SMALL LETTER LONG S"/>
+          <mapping type="codepoint">U+017F</mapping>
+          <mapping type="diplomatic">ſ</mapping>
+          <mapping type="normalized">s</mapping>
+        </glyph>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="nscapslonglig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE SMALL CAPITAL N LONG S"/>
+          <mapping type="codepoint">EED5</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">ns</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="qmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Q WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">E681</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="pmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">E665</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="pbardes">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER"/>
+          <mapping type="codepoint">U+A751</mapping>
+          <mapping type="diplomatic">ꝑ</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="qbardes">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER"/>
+          <mapping type="codepoint">U+A757</mapping>
+          <mapping type="diplomatic">ꝗ</mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="dstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER D WITH STROKE"/>
+          <mapping type="codepoint">0111</mapping>
+          <mapping type="diplomatic">đ</mapping>
+          <mapping type="normalized">d</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="colmidcomposit">
+          <unicodeProp name="Name" value="COLON WITH MIDDLE COMMA POSITURA"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+F1E5</mapping>
+          <mapping type="diplomatic"></mapping>
+          <!--<mapping type="normalized">.</mapping>-->
+        </char>
+
+        <char xml:id="us">
+          <unicodeProp name="Name" value="COMBINING US ABOVE"/>
+          <mapping type="codepoint">U+1DD2</mapping>
+          <mapping type="diplomatic"></mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="usmod">
+          <unicodeProp name="Name" value="MODIFIER LETTER US"/>
+          <mapping type="codepoint">U+A770</mapping>
+          <mapping type="diplomatic">ꝰ</mapping>
+          <mapping type="normalized">us</mapping>
+        </char>
+
+        <!-- aggiunto 2018-11-21 -->
+        <char xml:id="ttilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER T WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+0303</mapping>
+          <mapping type="diplomatic">t̃</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-05 -->
+        <char xml:id="atilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER A WITH TILDE"/>
+          <mapping type="codepoint">U+00E3</mapping>
+          <mapping type="diplomatic">ã</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+
+        <char xml:id="Atilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER A WITH TILDE"/>
+          <mapping type="codepoint">U+00C3</mapping>
+          <mapping type="diplomatic">Ã</mapping>
+          <mapping type="normalized">A</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-05 -->
+        <char xml:id="utilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER U WITH TILDE"/>
+          <mapping type="codepoint">U+0169</mapping>
+          <mapping type="diplomatic">ũ</mapping>
+          <mapping type="normalized">u</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-05 -->
+        <char xml:id="etilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER E WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0065 + U+0303</mapping>
+          <mapping type="diplomatic">ẽ</mapping>
+          <mapping type="normalized">e</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-12 -->
+        <char xml:id="tridotleft">
+          <unicodeProp name="Name" value="THREE DOT PUNCTUATION"/>
+          <mapping type="codepoint">U+2056</mapping>
+          <mapping type="diplomatic">⁖</mapping>
+          <mapping type="normalized">.</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-23 -->
+        <char xml:id="ctilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER C WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0065 + U+0303</mapping>
+        	<mapping type="diplomatic">c̃</mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+
+        <!-- aggiunto 2018-12-23 -->
+        <char xml:id="otilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER O WITH TILDE"/>
+          <mapping type="codepoint">U+00F5</mapping>
+          <mapping type="diplomatic">õ</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+
+        <!-- aggiunto 2025-08-28 -->
+        <char xml:id="amacrdot">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER A WITH MACRON AND DOT ABOVE"/>
+          <mapping subtype="composed"  type="codepoint">U+0061 + U+304 + U+0307</mapping>
+          <mapping type="diplomatic">ā̇</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+        
+        <!-- aggiunto 2025-08-28 -->
+        <char xml:id="emacrdot">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER E WITH MACRON AND DOT ABOVE"/>
+          <mapping subtype="composed"  type="codepoint">U+0065 + U+304 + U+0307</mapping>
+          <mapping type="diplomatic">ē̇</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+        
+        <!-- aggiunto 2025-08-27 -->
+        <char xml:id="omacrdot">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER O WITH MACRON AND DOT ABOVE"/>
+          <mapping subtype="composed"  type="codepoint">U+006F + U+304 + U+0307</mapping>
+          <mapping type="diplomatic">ō̇</mapping>
+          <mapping type="normalized">o</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="rum">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER RUM ROTUNDA"/>
+          <mapping type="codepoint">U+A75D</mapping>
+          <mapping type="diplomatic">ꝝ</mapping>
+          <mapping type="normalized">rum</mapping>
+        </char>
+
+        <char xml:id="rscaptailstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER RUM ROTUNDA"/><!-- CHECK Unicode name -->
+          <mapping type="codepoint">U+A776</mapping>
+          <mapping type="diplomatic">ꝶ</mapping>
+          <mapping type="normalized">rum</mapping>
+        </char>
+
+        <char xml:id="rmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER R WITH MACRON"/>
+          <mapping type="codepoint">U+F054</mapping>
+          <!--<mapping type="codepoint">U+0072 + U+0304</mapping>-->
+          <mapping type="diplomatic">r̄</mapping>
+          <mapping type="normalized">r</mapping>
+        </char>
+
+        <char xml:id="rmacrdotbl">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER R WITH DOT BELOW AND MACRON"/>
+          <mapping type="codepoint">U+1E5D</mapping>
+          <mapping type="diplomatic">ṝ</mapping>
+          <mapping type="normalized">r</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <char xml:id="tildedot">
+          <unicodeProp name="Name" value="TILDE WITH DOT ABOVE"/>
+          <mapping type="codepoint">U+2E1E</mapping>
+          <mapping type="diplomatic">⸞</mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+
+        <!-- ligatures -->
+
+        <!-- aggiunto 2051-12-18 -->
+        <!-- CHECK non sembra esserci supporto nei font per questo carattere, nome temporaneo v. MUFI nscapslonglig -->
+        <!-- https://mufi.info/q.php?p=mufi/chars/unichar/61141 -->
+        <glyph xml:id="nslig">
+          <unicodeProp name="Name" value="LATIN SMALL N LONG S LIGATURE"/>
+          <mapping type="ligature">U+006E + U+017F</mapping>
+          <mapping type="diplomatic">nſ</mapping>
+          <mapping type="normalized">ns</mapping>
+        </glyph>
+        
+        <glyph xml:id="uslig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE US"/>
+          <mapping type="ligature">U+0075 + U+017F</mapping>
+          <mapping type="diplomatic">us</mapping>
+          <mapping type="normalized">us</mapping>
+        </glyph>
+
+        <!-- aggiunto 2019-01-21 -->
+        <!-- CHECK non sembra esserci supporto nei font per questo carattere, v. etlig -->
+        <!-- https://www.fileformat.info/info/unicode/char/1f672/index.htm -->
+        <char xml:id="openetlig">
+          <unicodeProp name="Name" value="Ligature Open Et Ornament"/>
+          <mapping type="codepoint">U+1F672</mapping>
+          <mapping type="diplomatic">🙲</mapping>
+          <!--<mapping type="diplomatic">et</mapping>-->
+          <mapping type="normalized">et</mapping>
+        </char>
+
+        <!-- aggiunto 2019-01-21 -->
+        <!-- CHECK non c'è supporto nei font MUFI per questo carattere, non sembra neanche quello appropriato -->
+        <!-- https://www.fileformat.info/info/unicode/char/1f670/index.htm -->
+        <char xml:id="etlig">
+          <unicodeProp name="Name" value="Script Ligature Et Ornament"/>
+          <mapping type="codepoint">U+1F670</mapping>
+          <mapping type="diplomatic">🙰</mapping>
+          <!--<mapping type="diplomatic">et</mapping>-->
+          <mapping type="normalized">et</mapping>
+        </char>
+
+        <!-- aggiunto 2024-10 -->
+        <!-- CHECK completamente custom per ora, v. CE34-5 f. 57r --> 
+        <glyph xml:id="eilig">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER P WITH TILDE"/>
+          <!--<mapping subtype="composed" type="codepoint">U+0050 + U+0303</mapping>-->
+          <mapping type="diplomatic">ei</mapping>
+          <mapping type="normalized">ei</mapping>
+        </glyph>
+        
+        <!-- aggiunto 2019-01-21 -->
+        <glyph xml:id="urlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE UR"/>
+          <mapping subtype="composed" type="ligature">U+0075 + U+A783</mapping>
+          <mapping type="diplomatic">ur</mapping>
+          <mapping type="normalized">ur</mapping>
+        </glyph>
+
+        <!-- aggiunto 2019-01-21 -->
+        <glyph xml:id="utlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE UT"/>
+          <mapping subtype="composed" type="ligature">U+0075 + U+1D1B</mapping>
+          <mapping type="diplomatic">ut</mapping>
+          <mapping type="normalized">ut</mapping>
+        </glyph>
+
+        <!-- aggiunto 2025-08-20 -->
+        <char xml:id="trlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE TR"/>
+          <mapping type="codepoint">U+EED8</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">tr</mapping>
+        </char>
+        
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="Mtilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER M WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+004D + U+0303</mapping>
+          <mapping type="diplomatic">M̃</mapping>
+          <mapping type="normalized">M</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <!-- solo che è sbagliato perché sono i due punti runici e dovrebbe chiamarsi twodotpunct, v. https://mufi.info/q.php?p=mufi/chars/unichar/8282 -->
+        <char xml:id="twodot">
+          <unicodeProp name="Name" value="Two Dot Punctuation"/>
+          <mapping type="codepoint">U+205A</mapping>
+          <mapping type="diplomatic">⁚</mapping>
+          <mapping type="normalized">ue</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="jnodotenl">
+          <unicodeProp name="Name" value="LATIN ENLARGED LETTER SMALL DOTLESS J"/>
+          <mapping type="codepoint">EEFE</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="stilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER S WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0073 + U+0303</mapping>
+          <mapping type="diplomatic">s̃</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-12 -->
+        <char xml:id="eogon">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER E WITH OGONEK"/>
+          <mapping type="codepoint">0119</mapping>
+          <mapping type="diplomatic">ę</mapping>
+          <mapping type="normalized">ae</mapping>
+        </char>
+
+        <glyph xml:id="cogon">
+          <localProp name="Name" value="LATIN SMALL LETTER C WITH OGONEK"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+E476</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">c</mapping>
+        </glyph>
+
+        <!-- aggiunto 2019-03-13 -->
+        <char xml:id="xtilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER X WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0078 + U+0303</mapping>
+          <mapping type="diplomatic">x̃</mapping>
+          <mapping type="normalized">x</mapping>
+        </char>
+
+        <char xml:id="hstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER H WITH STROKE"/>
+          <mapping type="codepoint">U+0127</mapping>
+          <mapping type="diplomatic">ħ</mapping>
+          <mapping type="normalized">h</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-14 -->
+        <char xml:id="lhighstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER L WITH HIGH STROKE"/>
+          <mapping type="codepoint">U+A749</mapping>
+          <mapping type="diplomatic">ꝉ</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <char xml:id="lstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER L WITH STROKE"/>
+          <mapping type="codepoint">U+0142</mapping>
+          <mapping type="diplomatic">ł</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-15 -->
+        <char xml:id="pflour">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH FLOURISH"/>
+          <mapping type="codepoint">A753</mapping>
+          <mapping type="diplomatic">ꝓ</mapping>
+          <mapping type="normalized">pro</mapping>
+        </char>
+
+        <!-- aggiunto 2019-03-17 -->
+        <char xml:id="mtilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER M WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+006D + U+0303</mapping>
+          <mapping type="diplomatic">m̃</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+
+        <char xml:id="tildevert">
+          <unicodeProp name="Name" value="VERTICAL TILDE"/>
+          <mapping type="codepoint">U+2E2F</mapping>
+          <mapping type="diplomatic">ⸯ</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+        
+        <char xml:id="combtildevert">
+          <unicodeProp name="Name" value="COMBINING VERTICAL TILDE"/>
+          <mapping type="codepoint">U+033E</mapping>
+          <mapping type="diplomatic">̾</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+
+        <!-- aggiunto 2019-03-20 -->
+        <char xml:id="ur">
+          <unicodeProp name="Name" value="COMBINING UR ABOVE"/>
+          <mapping type="codepoint">1DD1</mapping>
+          <mapping type="diplomatic">᷑</mapping>
+          <mapping type="normalized">ur</mapping>
+        </char>
+
+        <char xml:id="combhook">
+          <unicodeProp name="Name" value="COMBINING HOOK ABOVE"/>
+          <mapping type="codepoint">U+0309</mapping>
+          <mapping type="diplomatic">̉</mapping>
+        </char>
+        
+        <char xml:id="combcurlhigh">
+          <unicodeProp name="Name" value="COMBINING CURL HIGH POSITION"/>
+          <mapping type="codepoint">U+F1C5</mapping>
+          <mapping type="diplomatic"></mapping>
+        </char>
+        
+        <!-- aggiunto 2019-03-20 -->
+        <char xml:id="semi">
+          <unicodeProp name="Name" value="SEMICOLON"/>
+          <mapping type="codepoint">003B</mapping>
+          <mapping type="diplomatic">;</mapping>
+          <mapping type="normalized">us</mapping>
+        </char>
+
+        <char xml:id="middot">
+          <unicodeProp name="Name" value="MIDDLE DOT"/>
+          <mapping type="codepoint">U+00B7</mapping>
+          <mapping type="diplomatic">·</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+        
+        <char xml:id="homothetic">
+          <unicodeProp name="Name" value="MIDDLE DOT"/>
+          <mapping type="codepoint">U+223B</mapping>
+          <mapping type="diplomatic">∻</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+
+        <!-- ##### aggiunto da FS in data 2024-04-13 ##### -->
+        <glyph xml:id="ctlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE CT"/>
+          <mapping type="ligature">U+0063 + U+0074</mapping>
+        	<mapping type="diplomatic"></mapping>
+          <mapping type="normalized">ct</mapping>
+        </glyph>
+        
+        <glyph xml:id="stlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE ST"/>
+          <mapping type="ligature">U+0073 + U+0074</mapping>
+        	<mapping type="diplomatic">ﬅ</mapping>
+          <mapping type="normalized">st</mapping>
+        </glyph>
+        
+        <glyph xml:id="aelig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE AE"/>
+          <mapping type="ligature">U+0061 + U+0065</mapping>
+          <mapping type="diplomatic">æ</mapping>
+          <mapping type="normalized">ae</mapping>
+        </glyph>
+        
+        <char xml:id="Rtilde">
+          <unicodeProp name="Name" value="LATIN CAPIPTAL LETTER R WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0052 + U+0303</mapping>
+          <mapping type="diplomatic">R̃</mapping>
+          <mapping type="normalized">R</mapping>
+        </char>
+        
+        <char xml:id="Rmacr">
+          <unicodeProp name="Name" value="LATIN CAPIPTAL LETTER R WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0052 + U+0303</mapping>
+          <mapping type="diplomatic">R̄</mapping>
+          <mapping type="normalized">R</mapping>
+        </char>
+        
+        
+        <char xml:id="Htilde">
+          <unicodeProp name="Name" value="LATIN CAPIPTAL LETTER H WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0048 + U+0303</mapping>
+          <mapping type="diplomatic">H̃</mapping>
+          <mapping type="normalized">H</mapping>
+        </char>
+        
+        <char xml:id="Hmacr">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER H WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0048 + U+ U+0304</mapping>
+          <mapping type="diplomatic">H¯</mapping>
+          <mapping type="normalized">H</mapping>
+        </char>
+        
+        <char xml:id="mmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER M WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+006D + U+0304</mapping>
+        	<mapping type="diplomatic">m̄</mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+        
+        <char xml:id="mmacrmed">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER M WITH MEDIUM-HIGH MACRON"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+E5B8</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">m</mapping>
+        </char>
+        
+        <char xml:id="Mmacrhigh">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER M WITH HIGH MACRON (ABOVE CHARACTER)"/>
+          <mapping subtype="MUFI-PUA" type="codepoint">U+E1B8</mapping>
+          <mapping type="diplomatic">M̄</mapping>
+          <mapping type="normalized">M</mapping>
+        </char>
+
+        <char xml:id="tmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER T WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+00AF</mapping>
+          <mapping type="diplomatic">t̄</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+        
+        <char xml:id="Tmacr">
+          <localProp name="Name" value="LATIN CAPITAL LETTER T WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+00AF</mapping>
+          <mapping type="diplomatic">T̄</mapping>
+          <mapping type="normalized">T</mapping>
+        </char>
+
+        <glyph xml:id="filig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE FI"/>
+        	<mapping type="ligature">U+FB01</mapping>
+        	<mapping type="diplomatic">ﬁ</mapping>
+          <mapping type="normalized">fi</mapping>
+        </glyph>
+        
+        <glyph xml:id="exlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE EX"/>
+          <mapping type="ligature">U+0065 + U+0078</mapping>
+          <mapping type="diplomatic">ex</mapping>
+          <mapping type="normalized">ex</mapping>
+        </glyph>
+        
+        <char xml:id="nmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER N WITH MACRON"/>
+        	<mapping subtype="composed" type="codepoint">U+E5DC</mapping>
+        	<mapping type="diplomatic"></mapping>
+          <mapping type="normalized">n</mapping>
+        </char>
+        
+        <char xml:id="Qtilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER Q WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0051 + U+0303</mapping>
+          <mapping type="diplomatic">Q̃</mapping>
+          <mapping type="normalized">Q</mapping>
+        </char>
+        
+        <char xml:id="Itilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER I WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0049 + U+0303</mapping>
+          <mapping type="diplomatic">Ĩ</mapping>
+          <mapping type="normalized">I</mapping>
+        </char>
+        
+        <char xml:id="Imacr">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER I WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+012A</mapping>
+          <mapping type="diplomatic">Ī</mapping>
+          <mapping type="normalized">I</mapping>
+        </char>
+        
+        <char xml:id="Utilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER U WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0055 + U+0303</mapping>
+          <mapping type="diplomatic">Ũ</mapping>
+          <mapping type="normalized">U</mapping>
+        </char>
+        
+        <char xml:id="Umacr">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER U WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+016A</mapping>
+          <mapping type="diplomatic">Ū</mapping>
+          <mapping type="normalized">U</mapping>
+        </char>
+        
+        <char xml:id="lmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER L WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+006C + U+0304</mapping>
+          <mapping type="diplomatic">l̄</mapping>
+          <mapping type="normalized">l</mapping>
+        </char>
+        
+        <char xml:id="Nmacr">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER N WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+004E + U+0304</mapping>
+          <mapping type="diplomatic">N̄</mapping>
+          <mapping type="normalized">N</mapping>
+        </char>
+        
+        <char xml:id="racute">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER R WITH ACUTE"/>
+          <mapping subtype="composed" type="codepoint">U+0155</mapping>
+          <mapping type="diplomatic">ŕ</mapping>
+          <mapping type="normalized">r</mapping>
+        </char>
+        
+        <char xml:id="gtilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER G WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0067 + U+0303</mapping>
+          <mapping type="diplomatic">g̃</mapping>
+          <mapping type="normalized">g</mapping>
+        </char>
+        
+        <char xml:id="gmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER G WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+1E21</mapping>
+          <mapping type="diplomatic">ḡ</mapping>
+          <mapping type="normalized">g</mapping>
+        </char>
+        
+        <char xml:id="smacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER S WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0073 + U+0304</mapping>
+          <mapping type="diplomatic">s̄</mapping>
+          <mapping type="normalized">s</mapping>
+        </char>
+        
+        <char xml:id="dstroke">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER D WITH STROKE"/>
+          <mapping subtype="composed" type="codepoint">U+0111</mapping>
+          <mapping type="diplomatic">đ</mapping>
+          <mapping type="normalized">d</mapping>
+        </char>
+        
+        <char xml:id="bstroke">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER B WITH STROKE"/>
+          <mapping subtype="composed" type="codepoint">U+0180</mapping>
+          <mapping type="diplomatic">ƀ</mapping>
+          <mapping type="normalized">b</mapping>
+        </char>
+        
+        <char xml:id="tacute">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER T WITH ACUTE"/>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+02CA</mapping>
+          <mapping type="diplomatic">tˊ</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+        
+        <glyph xml:id="orlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE OR ROTUNDA"></unicodeProp>
+          <mapping type="ligature">U+E8AE</mapping>
+          <mapping type="diplomatic">&#59566;</mapping>
+          <mapping type="normalized">or</mapping>
+        </glyph>
+        
+        <char xml:id="iring">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER T WITH ACUTE"/>
+          <mapping subtype="composed" type="codepoint">U+0069 + U+0357</mapping>
+          <mapping type="diplomatic">i͗</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+        
+        <char xml:id="pflourish">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH FLOURISH"/>
+          <mapping subtype="composed" type="codepoint">U+A753</mapping>
+          <mapping type="diplomatic">ꝓ</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+        
+        <char xml:id="Dtilde">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER D WITH TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0044 + U+02DC</mapping>
+          <mapping type="diplomatic">D˜</mapping>
+          <mapping type="normalized">D</mapping>
+        </char>
+        
+        <char xml:id="Dmacr">
+          <unicodeProp name="Name" value="LATIN CAPITAL LETTER D WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0044 + U+0304</mapping>
+          <mapping type="diplomatic">D̄</mapping>
+          <mapping type="normalized">D</mapping>
+        </char>
+        
+        <char xml:id="cmacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER C WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0063 + U+0304</mapping>
+          <mapping type="diplomatic">c̄</mapping>
+          <mapping type="normalized">c</mapping>
+        </char>
+      
+        
+<!-- AGGIUNTI DA FABIO SONCIN PER BSL5260
+        i glifi qui codificati indicano lettere cui un'altra lettera o segno è posto 
+        sopra la lettera principale-->        
+        <char xml:id="icurl">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER I WITH CULR"/>
+          <mapping subtype="composed" type="codepoint">U+0069 + U+1DCE</mapping>
+          <mapping type="diplomatic">i᷎</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+        
+        <char xml:id="ra">
+          <unicodeProp name="Name" value="COMBINING LATIN SMALL LETTER FLATTENED OPEN A ABOVE"/>
+          <mapping subtype="composed" type="codepoint">U+1DD3</mapping>
+          <mapping type="diplomatic">&#7635;</mapping>
+          <mapping type="normalized"></mapping>
+        </char>
+        
+        <char xml:id="erang">
+          <unicodeProp name="Name" value="COMBINING ABBREVIATION MARK ZIGZAG ABOVE ANGLE FORM"/>
+          <mapping subtype="composed" type="codepoint">U+F1C7</mapping>
+          <mapping type="diplomatic">&#61895;</mapping>
+          <mapping type="normalized"></mapping>
+        </char>
+        
+        <char xml:id="asmallabove">
+          <unicodeProp name="Name" value="COMBINING SMALL LETTER A"/>
+          <mapping subtype="composed" type="codepoint">U+0363</mapping>
+          <mapping type="diplomatic">ͣ</mapping>
+          <mapping type="normalized">a</mapping>
+        </char>
+        
+        <char xml:id="bstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER B WITH STROKE"/>
+          <mapping subtype="composed" type="codepoint">U+0180</mapping>
+          <mapping type="diplomatic">ƀ</mapping>
+          <mapping type="normalized">b</mapping>
+        </char>
+        
+        <char xml:id="ismallabove">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH CURL"/>
+          <mapping subtype="composed" type="codepoint">U+0180</mapping>
+          <mapping type="diplomatic">ͥ</mapping>
+          <mapping type="normalized">i</mapping>
+        </char>
+        
+        <char xml:id="pcurl">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH CURL"/>
+          <mapping subtype="composed" type="codepoint">U+0070 + U+1DCE</mapping>
+          <mapping type="diplomatic">p᷎</mapping>
+          <mapping type="normalized">p</mapping>
+        </char>
+        
+        <char xml:id="qbardestilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER AND TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+A757 + U+0303</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">q</mapping>
+        </char>
+
+        <char xml:id="et">
+          <unicodeProp name="Name" value="TIRONIAN SIGN ET"/>
+          <mapping subtype="composed" type="codepoint">U+204A</mapping>
+          <mapping type="diplomatic">⁊</mapping>
+          <mapping type="normalized">et</mapping>
+        </char>
+        
+        <char xml:id="orumlig">
+          <unicodeProp name="Name" value="LATIN SMALL LIGATURE O RUM"/>
+          <mapping subtype="composed" type="codepoint">U+EFBA</mapping>
+          <mapping type="diplomatic"></mapping>
+          <mapping type="normalized">orum</mapping>
+        </char>
+      	
+      	<char xml:id="esmallabove">
+      		<unicodeProp name="Name" value="COMBINING LATIN SMALL LETTER E"/>
+      		<mapping subtype="composed" type="codepoint">U+0364</mapping>
+      		<mapping type="diplomatic">ͤ</mapping>
+      		<mapping type="normalized">e</mapping>
+      	</char>
+      	
+      	<char xml:id="mtailstrok">
+      		<unicodeProp name="Name" value="LATIN SMALL LETTER MUM"/>
+      		<mapping subtype="composed" type="codepoint">U+A773</mapping>
+      		<mapping type="diplomatic">ꝳ</mapping>
+      		<mapping type="normalized">m</mapping>
+      	</char>
+      	
+      	<char xml:id="osmallabove">
+      		<unicodeProp name="Name" value="COMBINING LATIN SMALL LETTER O"/>
+      		<mapping subtype="composed" type="codepoint">U+0366</mapping>
+      		<mapping type="diplomatic">ͦ</mapping>
+      		<mapping type="normalized">o</mapping>
+      	</char>
+      	
+      	<char xml:id="rsmallabove">
+      		<unicodeProp name="Name" value="COMBINING LATIN SMALL LETTER R"/>
+      		<mapping subtype="composed" type="codepoint">U+036C</mapping>
+      		<mapping type="diplomatic">ͬ</mapping>
+      		<mapping type="normalized">r</mapping>
+      	</char>
+      	
+      	<char xml:id="dblovl">
+      		<unicodeProp name="Name" value="COMBINING DOUBLE OVERLINE"/>
+      		<mapping subtype="composed" type="codepoint">U+033F</mapping>
+      		<mapping type="diplomatic">̿</mapping>
+      		<mapping type="normalized"/>
+      	</char>
+      	
+      	<char xml:id="combcurlbar">
+      		<unicodeProp name="Name" value="COMBINING CURLY BAR ABOVE"/>
+      		<mapping subtype="composed" type="codepoint">U+F1CC</mapping>
+      		<mapping type="diplomatic"></mapping>
+      		<mapping type="normalized"/>
+      	</char>
+      	
+      	<char xml:id="ssup">
+      		<unicodeProp name="Name" value="COMBINING LATIN SMALL LETTER S"/>
+      		<mapping subtype="composed" type="codepoint">U+1DE4</mapping>
+      		<mapping type="diplomatic">&#7652;</mapping>
+      		<mapping type="normalized">s</mapping>
+      	</char>
+      	
+        <char xml:id="combcurl">
+          <unicodeProp name="Name" value="COMBINING OGONEK ABOVE"/>
+          <mapping subtype="composed" type="codepoint">U+1DCE</mapping>
+          <mapping type="diplomatic">᷎</mapping>
+          <!--<mapping type="normalized"></mapping>-->
+        </char>
+        
+        <char xml:id="Pmacr">
+          <unicodeProp name="Name" value="LATIN LARGE LETTER P WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+0050 + U+0304</mapping>
+          <mapping type="diplomatic">P̄</mapping>
+          <mapping type="normalized">P</mapping>
+        </char>
+                  
+        <!-- AGGIUNTI DA FABIO SONCIN PER BSL3519 
+        i glifi qui codificati indicano lettere cui un'altra lettera o segno è posto 
+        sopra la lettera principale-->        
+        <char xml:id="tverticaltilde">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER T WITH VERTICAL TILDE"/>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+033E</mapping>
+          <mapping type="diplomatic">t̾</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+        
+        <char xml:id="bus">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER B WITH US ABOVE"/>
+        	<mapping subtype="MUFI-PUA" type="codepoint">U+F063</mapping>
+        	<mapping type="diplomatic"></mapping>
+          <mapping type="normalized">b</mapping>
+        </char>
+
+        <char xml:id="bcomma">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER B WITH COMMA ABOVE RIGHT"/>
+          <mapping subtype="composed" type="codepoint">U+0062 + U+0315</mapping>
+          <mapping type="diplomatic">b̕</mapping>
+          <mapping type="normalized">b</mapping>
+        </char>
+        
+        <char xml:id="gcomma">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER G WITH COMMA ABOVE RIGHT"/>
+          <mapping subtype="composed" type="codepoint">U+0067 + U+0315</mapping>
+          <mapping type="diplomatic">g̕</mapping>
+          <mapping type="normalized">g</mapping>
+        </char>
+        
+        <char xml:id="pcomma">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER P WITH COMMA ABOVE RIGHT"/>
+          <mapping subtype="composed" type="codepoint">U+0070 + U+0315</mapping>
+          <mapping type="diplomatic">p̕</mapping>
+          <mapping type="normalized">P</mapping>
+        </char>
+        
+        <char xml:id="tcomma">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER T WITH COMMA ABOVE RIGHT"/>
+          <mapping subtype="composed" type="codepoint">U+0074 + U+0315</mapping>
+          <mapping type="diplomatic">t̕</mapping>
+          <mapping type="normalized">t</mapping>
+        </char>
+      	
+        
+        <glyph xml:id="qbardesa">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER AND 
+            SMALL LATIN LETTER A ABOVE"/>
+          <mapping type="ligature">U+A757 + U+0363</mapping>
+          <mapping type="diplomatic">ꝗͣ</mapping>
+          <mapping type="normalized">q</mapping>
+        </glyph>
+        
+        <glyph xml:id="qiabove">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Q WITH SMALL LATIN LETTER I ABOVE"/>
+          <mapping type="ligature">U+0071 + U+0365</mapping>
+          <mapping type="diplomatic">qͥ</mapping>
+          <mapping type="normalized">q</mapping>
+        </glyph>
+        
+        <glyph xml:id="giabove">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER G WITH SMALL LATIN LETTER I ABOVE"/>
+          <mapping type="ligature">U+0067 + U+0365</mapping>
+          <mapping type="diplomatic">gͥ</mapping>
+          <mapping type="normalized">g</mapping>
+        </glyph>
+        
+        <glyph xml:id="xrevstop">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER X WITH REVERS GLOTTAL STOP ABOVE"/>
+          <mapping type="ligature">U+0078 + U+02C1</mapping>
+          <mapping type="diplomatic">xˁ</mapping>
+          <mapping type="normalized">x</mapping>
+        </glyph>
+        
+        <glyph xml:id="maabove">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER M WITH SMALL LATIN LETTER A ABOVE"/>
+          <mapping type="ligature">U+006D + U+0363</mapping>
+          <mapping type="diplomatic">mͣ</mapping>
+          <mapping type="normalized">m</mapping>
+        </glyph>
+        
+        <glyph xml:id="caabove">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER C WITH SMALL LATIN LETTER A ABOVE"/>
+          <mapping type="ligature">U+0063 + U+0363</mapping>
+          <mapping type="diplomatic">cͣ</mapping>
+          <mapping type="normalized">c</mapping>
+        </glyph>
+        
+        <glyph xml:id="scomma">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER S WITH COMMA ABOVE RIGHT"/>
+          <mapping type="ligature">U+0073 + U+0315</mapping>
+          <mapping type="diplomatic">s̕</mapping>
+          <mapping type="normalized">s</mapping>
+        </glyph>
+
+        <!-- BREVIGRAFI CE34-5. CHECK: add normalized mapping? -->
+        
+        <char xml:id="Itwodot">
+          <localProp name="Name" value="LATIN CAPITAL LETTER I WITH TWO MIDDLE DOTS"/>
+          <mapping type="diplomatic">·I·</mapping>
+        </char>
+        
+        <char xml:id="slongdot">
+          <localProp name="Name" value="LATIN SMALL LETTER LONG S WITH MIDDLE DOT"/>
+          <mapping type="diplomatic">ſ·</mapping>
+        </char>
+        
+        <char xml:id="slongtwodot">
+          <localProp name="Name" value="LATIN SMALL LETTER LONG S WITH TWO MIDDLE DOTS"/>
+          <mapping type="diplomatic">·ſ·</mapping>
+        </char>
+
+      </charDecl>
+    </encodingDesc>
+
+    <revisionDesc>
+      <change status="draft" when="2022-01" who="RRDT">First experimental encoding of person and place names in TEI XML
+        format.</change>
+    </revisionDesc>
+    
+  </teiHeader>
+  
+   <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+   </text>
+</TEI>

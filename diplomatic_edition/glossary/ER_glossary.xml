@@ -1,0 +1,4668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+  <teiHeader>
+
+    <fileDesc>
+
+      <titleStmt>
+        <title>Leges Langobardorum project</title>
+        <title>A glossary of Langobardic words used in the text of the <title>Edictum Rothari</title></title>
+        <principal>Marina Buzzoni</principal>
+        <principal>Roberto Rosselli Del Turco</principal>
+        <respStmt>
+          <resp>Encoding in TEI-conformant markup: </resp>
+          <name>Roberto Rosselli Del Turco</name>
+          <name>Fabio Soncin</name>
+        </respStmt>
+        <respStmt>
+          <resp>General overview: </resp>
+          <name>Roberto Rosselli Del Turco</name>
+          <name>Marina Buzzoni</name>
+        </respStmt>
+        <respStmt>
+          <resp>Experimental EVT edition: </resp>
+          <name>Roberto Rosselli Del Turco</name>
+        </respStmt>
+      </titleStmt>
+
+      <editionStmt>
+        <edition>Previous editions</edition>
+        <respStmt xml:id="azzara">
+          <resp>Editor</resp>
+          <name ref="#Azzara1992">Azzara-Gasparri</name>
+        </respStmt>
+        <respStmt xml:id="beyerle">
+          <resp>Editor</resp>
+          <name ref="#Beyerle1962a">Beyerle</name>
+        </respStmt>
+        <respStmt xml:id="bluhme">
+          <resp>Editor</resp>
+          <name ref="#Bluhme1868">Beyerle</name>
+        </respStmt>
+      </editionStmt>
+
+      <extent>[??] kilobytes</extent>
+
+      <publicationStmt>
+        <authority><title>Leges Langobardorum</title> Project</authority>
+        <date>2014-</date>
+        <availability>
+          <p>Not to ricirculate. Contact the <title>Leges Langobardorum</title> Project researchers for more information.</p>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <!--<p>Born digital glossary for the Leges Langobardorum project.</p>-->
+        <listBibl>
+          <bibl xml:id="Onesti1999">
+            <author>
+              <surname>Francovich Onesti</surname>, <name>Nicoletta</name></author>
+            <title>Vestigia longobarde in italia (568-774). Lessico e antroponimia</title>.
+            <publisher>Artemide Edizioni</publisher>,
+            <date>1999</date>.
+          </bibl>
+          <bibl xml:id="PrinciBraccini1994">
+            <author>
+              <surname>Princi Braccini</surname>, <name>Giovanna</name></author>
+            <title>Nuove voci longobarde tra apparato e glosse nelle "Leges Langobardorum"</title>,
+            <title>Studi medievali</title>, 35, I
+            <publisher></publisher>,
+            <date>1994</date>.
+            <biblScope unit="page">67-99</biblScope>.
+          </bibl>
+        <bibl xml:id="Molinari1989">
+            <author>
+              <surname>Molinari</surname>, <name>Maria Vittoria</name></author>
+            <title>Lessico longboardo nei testi latino-edievali. Problemi di interferenza</title>
+            <publisher></publisher>,
+            <date>1989</date>,
+            <biblScope unit="page">225-239</biblScope>.
+          </bibl>
+          <bibl xml:id="Azzara-Gasparri1992">
+            <author>
+              <surname>Azzara</surname>, <name></name></author>,
+              <author>
+              <surname>Gasparri</surname>, <name></name></author>
+            <title></title>.
+            <publisher></publisher>,
+            <date>1992</date>.
+          </bibl>
+          <bibl xml:id="Molinari1995">
+            <author>
+              <surname>Molinari</surname>, <name>Maria Vittoria</name></author>,
+            <title>Lessico germanico nelle leggi longobarde</title>.
+            <publisher></publisher>,
+            <date>1995</date>,
+            <biblScope unit="page">5-20</biblScope>.
+          </bibl>
+          <bibl xml:id="Scardigli1977">
+            <author>
+              <surname>Scardigli</surname>, <name></name></author>,
+            <title>All'origine dei longobardismi in italiano</title>.
+            <publisher></publisher>,
+            <date>1977</date>,
+            <biblScope unit="page">335-354</biblScope>.
+          </bibl>
+          <bibl xml:id="VdR1970">
+            <author>
+              <surname>Van der Rhée</surname>, <name></name></author>,
+            <title></title>.
+            <publisher></publisher>,
+            <date>1970</date>.
+          </bibl>
+          <bibl xml:id="VdR1989">
+            <author>
+              <surname>Van der Rhée</surname>, <name></name></author>,
+            <title></title>.
+            <publisher></publisher>,
+            <date>1989</date>.
+          </bibl>
+        </listBibl>
+      </sourceDesc>
+     
+    </fileDesc>
+
+    <encodingDesc>
+      <charDecl>
+        <char xml:id="bstrok">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER B WITH STROKE"/>
+          <mapping subtype="composed" type="codepoint">U+0180</mapping>
+          <mapping>&#384;</mapping>
+        </char>
+        <char xml:id="thorn">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER Þ"/>
+          <mapping subtype="composed" type="codepoint">U+00FE</mapping>
+          <mapping>&#254;</mapping>
+        </char>
+        <char xml:id="imacr">
+          <unicodeProp name="Name" value="LATIN SMALL LETTER I WITH MACRON"/>
+          <mapping subtype="composed" type="codepoint">U+012B</mapping>
+          <mapping>&#299;</mapping>
+        </char>
+      </charDecl>
+    </encodingDesc>
+
+    <revisionDesc>
+      <change when="2025-04" who="FS">Started work to expand and complete the glossary.</change>
+      <change when="2024-06" who="RRDT">Finalized the glossary structure.</change>
+      <change when="2020-01" who="RRDT">First experimental encoding of a glossary in TEI XML  format.</change>
+    </revisionDesc>
+
+  </teiHeader>
+  
+  <text>
+    <body>
+      
+      <div type="glossary" xml:id="ER_glossary">
+
+      <!--TODO -->
+      <!--
+
+      + usare <listBibl> e <bibl> invece di <note type="biblio"> e <ref>? SI usare <listBibl> con dei <bibl>
+        con dentro i <ref>
+      + perché non si può avere <listBibl> in <entry>? ADESSO SI PUO'
+      + usare <mentioned> invece di <w> per i termini citati in <etym> come suggerito dalle Guidelines? 
+         secondo Bowers e Romary 2016 non una buona soluzione, invece di <cit> etc. però perché non <w>?
+         Inizialmente: SI <mentioned> NO <w> per omogeneità con il resto della codifica, ma <mentioned> non ha @lemmaRef!
+         se si usa <w> come avere il contenuto in corsivo all'interno di <etym?> stile CSS?
+         FINAL: usare <w> dentro <mentioned> quando necessario
+      - rivedere tutto alla luce della struttura aggiornata
+      - valutare utilità elemento <xr>
+      - invece dei link a un manoscritto servono link a ed. critica
+      - marcare <term> e <gloss> anche nel testo critico
+      - aggiungere waregang
+      
+      -->
+      
+      <!-- SOLUZIONE per gestione dei termini longobardi nel testo -->
+      <!--
+        
+        - occorrenza con <gloss> (o comunque occorrenza di riferimento): usare <term ref="#[entry id]" xml:id="xxxx"> e
+          @corresp alla <gloss> in modo da avere coppie sicure con aggiunta del numero di capitulum all'id,
+          es. ER_term_182, ER_term_199 (da fare sempre e comunque per tutte le id)
+        - idem per tutte le altre occorrenze ma senza @corresp (visto che comunque non c'è la <gloss>
+        - NO usare sempre <term> con xml:lng per specificare la lingua [[tutte le altre occorrenze: <w lemmaRef="#[entry id]">,
+          o <w corresp="#[entry id]"> se vogliamo usare @lemmaRef per un collegamento a dizionari online, assegnando comunque
+          un xml:id a <w> (ER_w_216)]]
+        - invece di @lemmaRef per i <term> aggiungere un <ptr/> o <ref> nell'<entry> del glossario 
+      
+      -->
+      
+      <!--NB All'interno di <text>:
+        
+        <term xml:id="CV188_term_astalin_07" xml:lang="lng" target="#astalin" corresp="#CV188_gloss_astalin_07">
+          <w xml:id="CV188_word_astalin">astalin</w>
+        </term>
+        <gloss target="#CV188_term_astalin_07" xml:id="CV188_gloss_astalin_07">id est....</gloss>
+
+        + serve il doppio xml:id per <term> e <w>? perché _word_ e non _w_? NO non serve doppio ID
+      
+      -->
+
+      <!-- ########################### -->
+      <!-- ########  ANSTALIN  ######## -->
+      <!-- ########################### -->
+      
+      <entry xml:id="anstalin">
+        
+        <!-- ########  Il lemma  ######## -->
+        
+        <form type="lemma">
+          <!-- in caso di forme regolarizzate alternative indicare con type="main" quella accettata per il glossario (normalmente coincide con l'xml:id comunque) -->
+          <orth>anstalin</orth>
+        </form>
+
+          <!-- Per le informazioni grammaticali varie forme possibili:
+            
+            <pos value="noun"></pos>
+            <pos value="noun"/>		-> FS: soluzione più versatile
+            <pos value="noun">n</pos> 
+            <pos>noun</pos> 
+          
+            sconsigliata l'ultima se si desidera avere la possibilità di localizzare il glossario: con value="noun"
+            abbiamo sempre la possibilità di tradurre l'output in più lingue.
+          -->          
+
+        <!--<gramGrp>
+         <pos value="noun">n</pos>
+          <gen value="feminine">f</gen>
+          <iType type="theme">-i</iType> oppure <iType type="theme" value="-i"></iType>
+        </gramGrp> 
+        
+        <gramGrp>
+            <pos expand="sostantivo" value="noun">sost.</pos> @expand facoltativo 
+            <gen expand="femminile" value="feminine">femm.</gen>
+            <iType type="theme">-i</iType> oppure <iType type="theme" value="-i"/>
+          </gramGrp>
+        -->
+
+        <gramGrp>
+          <pos value="noun"/>
+          <gen value="feminine"/>
+          <iType type="theme" value="-i"/>
+        </gramGrp>
+        
+        <!-- vecchia soluzione di codifica, ma codifica comunque valida: supportare???
+        <gramGrp>
+          <gram type="pos">noun</gram>
+          <gram type="gen">neuter</gram>
+          <gram type="theme">-a</gram>
+        </gramGrp>
+
+        se si tratta di un verbo:
+          <gramGrp>
+            <pos value="verb"></pos>
+            <iType type="verb" value="weak"></iType>
+            <subc value="transitive"></subc>
+          </gramGrp>
+
+          termine attuale se esiste in una lingua moderna
+          <form type="current"> 
+            <usg type="time">current</usg>
+            <orth xml:lang="ita">faida</orth>
+          </form>
+          
+        -->
+        
+        <!-- ######## Le occorrenze del termine nel testo critico ######## -->
+        
+        <!-- La forma del lemma -->
+
+        <form>
+          <orth>anstalin</orth>
+          <gramGrp>
+            <case value="nominative"/>
+            <number value="singular"/>
+          </gramGrp>
+          <cit type="lemma"> <!-- lemma o main? 
+            					FS: se si tratta della citazione "principale" potremmo preferire main
+          -->
+            <!-- Riferimento a <term> nel testo critico (<term> e <gloss> impiegati nel testo critico -->
+            <!-- Marcare nel testo anche term e gloss? 
+            	FS: Si intende nel testo all'interno di <quote>? Se sì, secondo me potrebbe essere una buona idea. 
+            	Forse si potrebbero inserire <term> e <gloss> con i riferimento opportuni (target="ER_term_astalin_07" e 
+            	target="ER_gloss_astalin_07") all'interno di <quote> e nel <ref> di ER 7 lasciare solo target="#ER_p_7"?
+            -->
+          	
+          	<!-- FS: questo <quote> sarà ripreso dal nostro testo critico, ma fino a quando non sarà disponibile
+          	dovremo fare affidamento a Bluhme. Può aver senso inserire un resp?-->
+            <quote>Si quis contra inimicús pugnando collegam suum dimiserit aut astalin fecerit, id est si eum diceperit
+              et cum eum non laboraverit, animae suae incurrat periculum.</quote><!-- NB in realtà è un accusativo, cercare es. al nominativo  -->
+            <!-- Nella versione finale target punta al testo critico, ovviamente a una forma al nominativo  -->
+            <ref target="#ER_term_astalin_07">ER 7</ref>
+          </cit>
+          <!-- 
+            - inserire anche tutti i riferimenti alla forma del lemma nei vari testimoni??? 
+            - si potrebbero ricavare automaticamente con uno script??? -->
+          <cit type="witness">
+            <!-- inserire in <quote> anche la forma originale del testimone? o quella regolarizzata? 
+            FS: non mi è chiaro come mai in questo <quote> si riporti nuovamente la glossa
+            -->
+            <quote>id est si eum diceperit et cum eum non laboraverit</quote>
+            <ref target="#CS730_term_anstalin_07">MS 1</ref>
+            <ref target="#CV188_term_anstalin_07">MS 2</ref>
+            <ref target="#CE34-5_term_anstalin_07">MS 3</ref>
+            <ref target="#VL5359_term_anstalin_07">MS 5</ref>
+
+          </cit>
+        </form>
+        
+        <!-- Le forme flesse -->
+        
+        <form type="inflected">
+          <orth>anstalin</orth>
+          <gramGrp>
+            <case value="accusative"/>
+            <number value="singular"/>
+          </gramGrp>
+          <cit type="inflected">
+            <!-- Nella versione finale target punta al testo critico, ovviamente a una forma flessa in questo caso  -->
+            <!-- Marcare nel testo anche term e gloss? -->
+            <quote>Si quis contra inimicús pugnando collegam suum dimiserit aut astalin fecerit, id est si eum diceperit
+              et cum eum non laboraverit, animae suae incurrat periculum.</quote>
+            <ref target="#ER_term_anstalin_07">ER 7</ref>
+          </cit>
+          <!-- 
+            - inserire anche tutti i riferimenti alla forma del lemma nei vari testimoni??? 
+            - si potrebbero ricavare automaticamente con uno script???
+          -->
+          <cit type="witness">
+            <quote>id est si eum diceperit et cum eum non laboraverit</quote>
+            <ref target="#CV188_term_anstalin_07">MS 2</ref>
+          </cit>
+        </form>
+
+        <!-- Le occorrenze e le relative glosse in altri testi (??? vedi template) -->
+        <!-- L'unico riferimento alle glosse è qui al momento.
+        <cit type="cit_section">
+            <cit type="ms_text">
+               facoltativo: <oRef> corrisponde alla forma ortografica del lemma, anche come elemento vuoto
+              <quote><oRef>anstallin</oRef> fecerit, id est si eum diceperit et cum eum non laboraverit</quote>
+              <ref target="#CV188_term_astalin_07 #CV188_gloss_astalin_07">MS 2</ref>
+            </cit>
+             -->
+        <cit type="other">
+        	<!-- citazioni dai tre glossari di Albano Leoni -->
+          <quote>Astalin. Id <ex>est</ex> decipere</quote>
+          <ref>Gloss. Matr.</ref>
+        </cit>
+        
+        <!-- ######## Le forme grafiche alternative ######## -->
+
+        <!-- Per ogni testimone di cui abbiamo la trascrizione il ref contiene un target -->
+        <!-- NB così come segue o meglio <orth><ref n="MS 2" target="#CV188_term_astalin_07">anstallin</ref></orth>?
+                meglio come segue perché così il riferimento è ai singoli testimoni che potrebbero condividere forma alternativa-->
+
+        <form type="variants"><!-- lasciare astalin, rimuovere anstalin -->
+          <orth>astalin <ref>MSS 1, 5, 8, 9, 10, 11; Gloss. Matr.</ref></orth>
+          <orth>anstallin <ref target="#CV188_term_anstalin_07">MS 2</ref></orth>
+          <orth>anstallim <ref target="#CE34-5_term_anstalin_07">MS 3</ref></orth>
+          <orth>astalium <ref>MS 12</ref></orth>
+        </form>
+
+        <!-- ######## Il significato o i significati del termine ######## -->
+
+        <sense>
+          <def>Tradimento, fuga o abbandono dei compagni in battaglia.</def>
+
+          <!-- Testo di commento/spiegazione relativa al termine -->
+
+          Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa corrispondente.
+          
+          <!-- Soluzioni scartate: 
+          
+          <seg type="comment">Probabilmente una parola antica, tale da necessitare una spiegazione
+            nella glossa corrispondente.</seg>
+
+          <gloss type="comment">Probabilmente una parola antica, tale da necessitare una spiegazione
+            nella glossa corrispondente.</gloss>
+          
+          <sense>Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa
+            corrispondente (Francovich Onesti).</sense>
+          
+          <sense value="desc">Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa
+            corrispondente (Francovich Onesti).</sense>
+            
+           -->
+
+        </sense>
+        
+        <!-- In caso di più <sense> (n="1", n="2" etc.) con <def> al loro interno: -->
+        
+        <sense>Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa
+          corrispondente (Francovich Onesti).</sense>
+        
+        <!-- Soluzioni scartate: 
+
+        <sense value="desc">Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa
+          corrispondente (Francovich Onesti).</sense>
+        
+        <sense>
+          
+          <seg type="comment">Probabilmente una parola antica, tale da necessitare una spiegazione
+            nella glossa corrispondente.</seg>
+          
+          <gloss type="comment">Probabilmente una parola antica, tale da necessitare una spiegazione
+            nella glossa corrispondente.</gloss>
+          
+        </sense>
+        
+        -->
+
+        <!-- Una nota di commento/spiegazione relativa al termine -->
+
+        <!-- Non usare <note> perché aprirebbe note pop-up
+          
+          <note type="comment">Probabilmente una parola antica, tale da necessitare una spiegazione
+          nella glossa corrispondente.</note>
+        
+        -->
+        
+        <!-- cross-reference interna al glossario -->
+        <xr type="see">V. <ref target="#xxxx">xxxx</ref></xr>
+        
+
+        <!-- ######## Note etimologiche e linguistiche ######## -->
+
+        <!-- Oltre al testo narrativo possono essere definite più precisamente altre forme con sotto-<etym>
+          (vedi articolo sulla codifica delle informazioni etimologiche) -->
+
+        <etym>
+          Formazione deverbale basata sul prefisso <m>a-</m>, <m>an-</m> unito alla radice del verbo
+          <mentioned>*staljan</mentioned> <def>sottrarsi, sfuggire</def> (cfr. <lang>ia.</lang>
+          <mentioned><w lemmaRef="https://bosworthtoller.com/2350">a-stælan</w></mentioned> <def>insinuarsi,
+            sedurre</def> e <mentioned><w lemmaRef="https://bosworthtoller.com/28857">stelan</w></mentioned>
+          <def>sottrarsi</def>), con suffisso <m>-ini-</m> tipico dei sostantivi femminili.
+          <!-- cross-reference interna al glossario -->
+          <xr type="etym">Etimologicamente connesso con <ref target="#yyyy">yyyy</ref>, ma anche
+          <!-- link a risorsa esterna con lemmaRef 
+           
+          Qui su può inserire link a leges barbarorum -->
+            <mentioned><w lemmaRef="https://bosworthtoller.com/28857">stelan</w></mentioned>
+          </xr>
+        </etym>
+
+        <!-- ######## Eventuali forme collegate ######## -->
+        
+        <!-- <re></re>    all'interno del glossario --> <!-- NOPE vedi sopra alla fine di <sense> -->
+        <!-- <ref></ref>  in altri testi -->
+
+        <!-- ######## Bibliografia ######## -->
+
+          <!-- Soluzioni scartate:
+            
+         <note type="biblio">
+            <ref target="#Onesti2000">Francovich Onesti 2000, pp. 54-5.</ref>
+            <ref target="#PrinciBraccini1994">Princi Braccini 1994, pp. 76-8.</ref>
+            <ref target="#Molinari1989">Molinari 1989, pp. 233-4.</ref>
+        </note>
+
+          <bibl>
+            <ref target="#Onesti2000">Francovich Onesti 2000, pp. 54-5.</ref>
+            <ref target="#PrinciBraccini1994">Princi Braccini 1994, pp. 76-8.</ref>
+            <ref target="#Molinari1989">Molinari 1989, pp. 233-4.</ref>
+          </bibl>
+          
+          -->
+        
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, pp. 54-5.</bibl>
+            <bibl><ref target="#PrinciBraccini1994">Princi Braccini 1994</ref>, pp. 76-8.</bibl>
+            <bibl><ref target="#Molinari1989">Molinari 1989</ref>, pp. 233-4.</bibl>
+            <!-- Scardigli, P. (1987), “Le parole longobarde per l’ecdotica dell’Editto di Rotari”, Medioevo e Rinascimento 1, 53-73.
+            <biblStruct type="journalArticle" xml:id="Scardigli1987">
+              <analytic>
+                <title level="a">Le parole longobarde per l'ecdotica dell'Editto di Rotari</title>
+                <author><forename>Piergiuseppe</forename><surname>Scardigli</surname></author>
+              </analytic>
+              <monogr>
+                <title level="j">Medioevo e rinascimento</title>
+                <imprint>
+                  <biblScope unit="volume">1</biblScope>
+                  <biblScope unit="page">53-73</biblScope>
+                  <date>1987</date>
+                </imprint>
+              </monogr>
+            </biblStruct> -->
+            <bibl><ref target="#Scardigli1987">Scardigli 1987</ref>, pp. 53-73.</bibl>
+          </listBibl>
+
+      </entry>
+
+      <!-- ############################### -->
+      <!-- ########  ANDEGAUUERC  ######## -->
+      <!-- ############################### -->
+      
+        <entry xml:id="andegauuerc">
+          <form type="lemma">
+            <!-- in caso di forme regolarizzate alternative indicare con type="main" quella accettata per il glossario (normalmente coincide con l'xml:id comunque) -->
+            <orth resp="#Onesti" type="main">andegauuerc</orth>
+            <orth resp="#Azzara2005">handegawerc</orth>
+          </form>
+
+          <gramGrp>
+            <pos value="noun"/>
+            <gen value="neuter"/>
+            <iType type="theme" value="-a"/>
+          </gramGrp>
+
+          <cit type="main">
+            <quote>Et si casu faciente sine heredes mortuus fuerit et antea iudicaverit se vivo res suas proprias, id
+              est handegawerc et harigawerc, secundum legem langobardorum, habeat, cui donaverit.</quote>
+            <ref target="#ER_p_225">ER 225</ref>
+          </cit>
+
+          <form type="variants">
+            <orth>andegauuerc<ref>MSS 1, 6, 8, 10</ref></orth>
+            <orth>andegauuere<ref>MS 9</ref></orth>
+            <orth>andegauuero<ref>MS 12</ref></orth>
+            <orth>andecauuerc<ref>MS 2, 3, 11</ref></orth>
+            <orth>andecaauuerc<ref>MS 2, 3, 11</ref></orth>
+            <orth>andecaaurc<ref>MS 5</ref></orth>
+            <orth>andegauerc<ref>Gloss. Cav.</ref></orth>
+            <orth>andecauerc<ref>Gloss. Matr.</ref></orth>
+          </form>
+
+          <sense>
+            <def>Manufatti e attrezzi che passano in eredità.</def>
+            Probabilmente un’espressione desueta già nell’ER.
+          </sense>
+
+          <etym>Composto in cui il primo elemento è chiaramente gc. <mentioned>*handu-</mentioned>
+            <def>mano</def> e il secondo gc. <mentioned>*werka</mentioned>
+            <def>opera</def>; cfr. ia. <w lemmaRef="https://bosworthtoller.com/18138">handgeweorc</w>
+            <def>prodotto di attività manuale</def> e <w lemmaRef="https://bosworthtoller.com/18882">heregeatu</w>
+            <def>equipaggiamento militare, lascito in armi e corazze</def>.
+          </etym>
+
+          <xr type="see"><ref target="#ande">ande-</ref></xr>
+
+          <listBibl>
+            <bibl><ref target="#Bruckner1895">Bruckner 1895</ref>, pp. 123, 202</bibl>
+            <bibl><ref target="#Feist1939">Feist 1939</ref>, p. 41</bibl>
+          </listBibl>
+        </entry>
+
+      <!-- ############################### -->
+      <!-- #######  ANGARGATHUNGI  ####### -->
+      <!-- ############################### -->
+      
+      <entry xml:id="angargathungi">
+
+        <form type="lemma">
+          <orth>angargathungi</orth>
+        </form>
+
+        <gramGrp>
+          <pos value="noun"/>
+          <gen value="neuter"/>
+          <!--<number value="singular"/>-->
+          <iType type="theme" value="-ja"/>
+        </gramGrp>
+        
+        <cit type="main">
+          <quote>Si vero plures fuerint, si ingenuus, qualiter in angargathungi, ipsum homicidium conponat;</quote>
+          <ref target="#">ER 14</ref>
+          <quote>Si quis alii oculum excusserit, pro mortuum adpretietur, qualiter in angargathungi, id est secundum
+            qualitatem personae;</quote>
+          <ref target="#">ER 48</ref>
+          <quote>Et si contigerit de ipsas plagas intra anni spatium, qui plagatus est, mori, tunc ille, qui cum
+            plagavit, conponat, qualiter in angargathungi, id est secundum qualitatem personae.</quote>
+          <ref target="#">ER 74</ref>
+        </cit>
+        
+        <form type="variants">
+          <orth>argargathungi <ref>MS 1, 5</ref></orth>
+          <orth>angarghatun <ref target="#CE34-5_lb_070v_20">MS 3</ref></orth>
+          <orth>gargathungin <ref>MS 8</ref></orth>
+          <orth>argargathungi <ref>MS 9</ref></orth>
+          <orth>angarthungi <ref>MS 11</ref></orth>
+          <orth>angar a thungi <ref>MS 12</ref></orth>
+        </form>
+        
+          <sense>
+            <def>Valore dell'uomo libero secondo i possedimenti di terra; rango sociale di una persona.</def> Ricorre
+            sempre nell'espressione <mentioned>in angargathungi</mentioned> che fa pensare a una formula preesistente in
+            cui fosse già presente <mentioned>in</mentioned>. </sense>
+        
+        <cit>
+          <quote>Inangargathungin. Id est secundum arbitrium regis sicut appretiatur fuerit.</quote>
+          <ref>Gloss. Matr.</ref>
+        </cit>
+        
+        <note type="comment">Ricorre sempre nell'espressione <mentioned>in
+          angargathungi</mentioned> che fa pensare a
+          una formula preesistente in cui fosse già presente <mentioned>in</mentioned>.</note>
+        
+          <etym>
+            Il termine risulta composto da gc. <mentioned>*angra-</mentioned>
+            <def>terra non arata, prato, pascolo</def> e gc. <mentioned>*ga-þungja-</mentioned>
+            <def>crescita, prosperità, ricchezza</def>.
+          </etym>
+        
+        <xr type="see"><ref target="#angar">angar-</ref></xr>
+        
+        <listBibl>
+          <bibl><ref target="#Azzara-Gasparri1992">Azzara-Gasparri 1992</ref>, p. 108</bibl>
+          <bibl><ref target="#Molinari1995">Molinari 1995</ref>, p. 8</bibl>
+          <bibl><ref target="#Scardigli1977">Scardigli 1977</ref>, p. 342</bibl>
+          <bibl><ref target="#VdR1970">VdR 1970</ref>, pp. 20-31</bibl>
+        </listBibl>
+      </entry>
+      
+      <!-- ########################### -->
+      <!-- #######  MORGINGAB  ####### -->
+      <!-- ########################### -->
+      
+      <entry xml:id="morgingab">
+        <form type="lemma">
+          <orth>morgingab</orth>
+        </form>
+        
+        <gramGrp>
+          <pos expand="sostantivo" value="noun">sost.</pos>
+          <gen expand="femminile" value="feminine">femm.</gen>
+          <iType type="theme">-ō</iType>
+        </gramGrp>
+        
+        <cit type="main">
+          <quote>Et si noluerit accepere, habeat ipsa mulier et <emph>morgingab</emph> et, quod de parentes adduxit, id est
+            faderfio</quote>
+          <ref target="#ER_term_morgingab_182">ER 182</ref>
+        </cit>
+        
+        <form type="variants">
+          <orth>morgangab  <ref>CDL n° 67 (a. 738 Lucca)</ref></orth>
+          <orth>morgingap <ref target="#CV188_term_morgingab_182">CV188 182, 199, 200, 216</ref>, 
+            <ref target="#CE34-5_term_morgingab_216">CE34(5) 216</ref></orth>
+          <orth>morgincap <ref>Liut. 103</ref></orth>
+          <orth>morghincap <ref>CDL n° 120 (a. 755 Lucca)</ref></orth>
+          <orth>morganicapu <ref>CDL n° 70 (a. 739 Lucca)</ref></orth>
+          <orth>morganicaput <ref>CDL n° 30 (a. 722 Lucca)</ref>, <ref>Liut. 117</ref></orth>
+        </form>        
+
+        <sense>
+          <def>dono matrimoniale del marito alla moglie</def>
+          Con <mentioned>morgingab</mentioned> si indica il dono matrimoniale versato dal marito alla
+          moglie la mattina successiva alla prima notte di nozze. Si tratta di un termine già presente
+          nell'<title>Editto di Rotari</title>, quindi di origini antiche come testimoniato anche dalle equivalenze in
+          altre lingue germaniche, che entra nel lessico giuridico dove viene ulteriormente sviluppato nelle estensioni
+          successive a Rotari e anzi gode di notevole successo venendo utilizzato fino al XII secolo, ben oltre la fine
+          del regno dei Longobardi in Italia (v. <ref>Francovich Onesti, pp. 105-106</ref>).
+        </sense>
+        
+        <cit type="cit_section">
+          <cit>
+            <quote>tunc illa vidua, qui in domo patris aut fratris regressa est, habeat sibi in antea morgingab et
+              metfio</quote>
+            <ref target="#ER_w_morgingab_199">ER 199</ref>
+          </cit>
+          <cit>
+            <quote>Id <ex>est</ex> decipere</quote>
+            <ref>Gloss. Matr.</ref>
+          </cit>
+        </cit>
+        
+        <etym>
+          Termine attestato in altre lingue germaniche, cfr. ad esempio 
+          <lang>ia.</lang> <mentioned>morgengifu</mentioned>, <lang>ata.</lang> <mentioned>morgangaba</mentioned>, <lang>alam.</lang>
+          <mentioned>morgangepa</mentioned>. Composto formato da <xr>morgin</xr> (&lt; <lang>gc.</lang>
+          <mentioned>*murgana-</mentioned>, &lt; <lang>ie.</lang> <mentioned>*merk-</mentioned>, forse da una radice
+          <mentioned>*mer-</mentioned> <def>luccicare, brillare</def>) e <xr>gab</xr> (&lt; <lang>gc.</lang>
+          <mentioned>*gebō-</mentioned>, cfr. <lang>ia.</lang> <mentioned>giefu</mentioned>, <lang>sass.</lang>
+          <mentioned>geba</mentioned>, <mentioned>giba</mentioned>, <lang>ata.</lang> <mentioned>geba</mentioned> &lt; <lang>gc.</lang>
+          <mentioned>*geban-</mentioned> <def>dare</def>).
+        </etym>
+        
+        <listBibl>
+          <bibl><ref target="#"></ref></bibl>
+          <bibl><ref target="#"></ref></bibl>
+          <bibl><ref target="#"></ref></bibl>
+        </listBibl>
+      </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  ACTOGILD  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="actogild">
+          <form type="lemma">
+            <orth resp="#Onesti">actogild</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="masculine"></gen>
+            <gen value="neuter"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">*-a</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote resp="#Azzara">Qui rem alienam asto vindederit. Si quis rem alienam, id est servum aut ancillam seu alias res, 
+              sciens rem alienam esse, non suam, ubicumque transvindederit et inventum aut provatum fuerit, in 
+              <hi>actugild</hi> eam restituat. Et si per ignorantiam vindederit, tunc praeveat sacramentum, quod credens suum 
+              vindedissit; reddat caput cum notrimen suo, qualiter se sit.</quote>
+            <ref target="#ER_p_229">ER 229</ref>
+            <quote resp="#Azzara">
+              Si quis per errorem alium pro alio pigneraverit per servum aut ancillam, ita decernimus, ut, postquam cognovit, quod male pigneravit,
+              mox ipsum pignum relaxit. Et si pulsatus fuerit a domino servi, tunc preveat
+              sacramentum: quia per errorem fecit, nam non asto, et crededit, debitorem
+              suum pignerassit; tunc sit indempnis. Nam si plagas aut feritas fecerit
+              in ipsum pignus, conponat, sicut in hoc edictum legitur. Et si sacramentum
+              dare non presumpserit, quod per errorem pignerassit, reddat
+              ipsum pignum in actugild.
+            </quote>
+            <ref target="#ER_p_248">ER 248</ref>
+            <quote resp="#Azzara">
+              Si plures homines furtum in unum fecerint, tam liberi quam servi, 
+              liceat eos, si voluerint, se insimul adunare et furtum ipsum in actugild
+              reddere. Si quis se ex ipsis deviderit, pro se tantum legibus conponat, id
+              est ipsum furtum sibi nonum.
+            </quote>
+            <ref target="#ER_p_263">ER 263</ref>
+            <quote resp="#Azzara">
+              Si quis de lignamen adunatum in curte aut in platea ad casam
+              faciendam furaverit, conponat solidos sex; si autem in silva dispersum
+              fuerit et furaverit, conponat in actugild.
+            </quote>
+            <ref target="#ER_p_283">ER 283</ref>
+            <quote resp="#Azzara">
+              De plovum. Si quis plovum aut aratrum alienum iniquo animo
+              capellaverit, conponat solidos tres, et si furaverit, reddat in actogild.
+            </quote>
+            <ref target="#ER_p_288">ER 288</ref>
+            <quote resp="#Azzara">
+              De cervo domestico. Si quis cervum domesticum, qui tempore
+              suo rugire solit, fragiaverit, conponat domino eius solidûs duodicem; nam
+              si furaverit, in actugild reddat.
+            </quote>
+            <ref target="#ER_p_315">ER 315</ref>
+            <quote resp="#Azzara">
+              Si quis cervum domesticum alienum, qui non rugierit, intrigaverit,
+              conponat domino eius solidos sex; nam si eum furaverit, reddat in
+              actugild.
+            </quote>
+            <ref target="#ER_p_316">ER 316</ref>
+            <quote resp="#Azzara">
+              Si quis cavallum alienum ascenderit et infra vicinia tantum cavallicaverit, 
+              id est prope ipsum vicum, conponat solidos duos; nam si
+              inantea eum caballicare presumpserit et dominum non rogaverit, in actogild
+              reddat.
+            </quote>
+            <ref target="#ER_p_340">ER 340</ref>
+          </cit>
+          
+          <form type="variants">
+            <orth>actocild <ref>MS 2</ref></orth>
+            <orth>actogeldo/actogildo <ref target="#">MS 4</ref></orth>
+            <orth>actoghild, actighld, agthild, actiglhd <ref>MS 5</ref></orth>
+            <orth>actochild <ref>MS 10</ref></orth>
+            <orth>actogyld <ref>MS 11</ref></orth>
+            <orth>actogilt <ref>MS 12</ref></orth>
+            <orth>actigild <ref>Gloss. Cav.</ref></orth>
+            <orth>actigild <ref>Gloss. Matr.</ref></orth>
+            <orth>actigild <ref>Gloss. Vat.</ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Indennizzo pari a otto volte il valore.</def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  AIDOS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="aidos">
+          <form type="lemma">
+            <orth resp="#Onesti">aidos</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="masculine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="plural"></number>
+            <iType type="theme">*-a</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER 359</ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def  source="#Onesti1999">sacramentales, testimoni al giuramento</def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 53-54.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  ALDIUS  ######### --><!-- Changed from "aldio", see Francovich Onesti RRDT -->
+        <!-- ########################### -->
+        
+        <entry xml:id="aldius">
+          <form type="lemma">
+            <orth resp="#Onesti1999" type="main">aldius</orth>
+            <orth>haldius</orth>
+            <orth>aldio</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="masculine"></gen>
+            <number value="singular"></number>
+            <iType type="theme"></iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Semilibero.</def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym resp="#Onesti1999">
+            Etimologia incerta. Secondo <ref>Princi Braccini</ref> la grafia con <m>h-</m> è storica, 
+            in quanto fa derivare il termine da <lang>germ.</lang> <mentioned>*hal<g ref="#bstrok"/>-</mentioned> + 
+            <mentioned>*<g ref="#thorn"/>ewa-</mentioned> <mentioned>semi-servo</mentioned>.
+            <ref target="#VdR1989">Van der Rhée</ref> mette a confronto <lang>as.</lang> <mentioned><w>eldi</w></mentioned>, 
+            <lang>ags.</lang> <mentioned><w>elde</w></mentioned>, 
+            <lang>norr.</lang> <mentioned><w>aldir</w></mentioned> con una specializzazione da 
+            <def>uomini</def> a <def>sottoposti, vassalli</def>. Oppure dal <lang>germ.</lang> 
+            <mentioned>*ala-</mentioned> <def>tutto</def> + <mentioned>*-<g ref="thorn"/>ewa-</mentioned>, 
+            più difficile sul piano del significato.
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 56-57.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  ANAGRIFT  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="anagrift">
+          <form type="lemma">
+            <orth resp="#Onesti1999">anagrift</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Ratto, unione contraria alle disposizioni della famiglia della donna.</def>
+          </sense>
+          <sense>Il termine indica l'unione con una donna, 
+            ragazza o vedova, avvenuta contro la volontà 
+          dei parenti di lei, ma col suo consenso [...], 
+          unione che può essere matrimoniale o fuori del 
+          matrimonio (ratto). È dunque un reato contro 
+          la potestà della parentela, che va riscarcito [...]. 
+        Non ha nulla a che vedere nè con l'adulterio di una donna sposata, 
+        nè con la violenza (<ref target="#Onesti1999">Francovich Onesti 1999</ref>, 58).</sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+
+          <xr type="see">V. <ref target="#anagrip">anagrip</ref>.</xr>
+          
+          <etym resp="#Onesti1999">
+            Sostantivo astratto formato in <m>*-ti</m> (<lang>germ.</lang> *<mentioned>grifti-</mentioned>), 
+            formazione che solitmaente impiega radici verbali da verbi forti in composizione con prefissi. 
+            Secondo <ref>Bruckner</ref> e <ref>van der Rhee</ref> morfoligicamente distinto da <ref>anagrip</ref>, 
+            ma secondo <ref>Scardigli</ref> possono essere due varianti d'autore. Egli ritiene che 
+            <mentioned>anagrift</mentioned> possa esssere di origine gotica, o che <mentioned>anagrip</mentioned> sia 
+            longobardo ma senza II LV e <mentioned>anagrift</mentioned> una forma <lang>lgb.</lang> tarda o tedeschizzata.
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 58.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  ANAGRIP  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="anagrip">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="masculine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">*-a</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Ratto, unione contraria alle disposizione della famiglia della donna.</def>
+          </sense>
+
+          <sense resp="Onesti1999">Può darsi che in origine avvenisse per ratto la primitiva forma di 
+            matrimonio, poi ritualizzato nel pagamento della <mentioned>meta</mentioned>. 
+            Pur con successive evoluzioni semantiche, <mentioned >anagrip</mentioned> continua ad essere
+             usato nel altino giuridico dei documenti notarili fino al XII secolo 
+             (<ref>Arcamone</ref>)(<ref target="#Onesti1999">Francovich Onesti 1999</ref>. 59).
+          </sense>
+          
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+
+          <xr>V. <ref target="#anagrift">anagrift</ref>.</xr>
+          
+          <etym resp="#Onesti1999">
+            Dal tema <lang>germ.</lang> *<mentioned>gripa-z</mentioned>/<mentioned>gripi-z</mentioned> con 
+            radicale breve dalla- radice *<mentioned>gripan-</mentioned> <def>prendere, impossessarsi</def>.
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 58-59.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+      
+        <!-- ########################### -->
+        <!-- #########  ARGA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="arga">
+          <form type="lemma">
+            <orth resp="#Onesti1999">arga</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1" resp="#Onesti999">
+            <def>Vile, incapace, spregevole.</def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym resp="#Onesti1999">
+            Ha confronti in tutte le lingue germaniche nord-occidentali 
+            (<lang>aat.</lang> <mentioned>arg</mentioned>, <lang>norr.</lang> <mentioned>argr</mentioned>) 
+            e risale a <lang>germ.</lang> *<mentioned>arg-az</mentioned>. <ref>Bruckner</ref> lo considera 
+            aggettivo debole (da <mentioned>arg</mentioned>) masch, sing. al nom. e voc., con <m>-a</m> 
+            come <lang>gc.</lang> e <lang>ags.</lang>, diversamente dalla desinenza <lang>aat.</lang> <m>-o</m>.
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 61-62.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  ASTO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="asto">
+          <form type="lemma">
+            <orth resp="#Onesti1999">asto</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="adjective"></pos>
+            <pos value="adverb"></pos>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Apposta, intenzionalmente.</def>
+          </sense>
+          
+          <sense resp="#Onesti1999">
+            Impiegato soprattutto nella locuzione <mentioned>asto animo</mentioned> '<def>con animo malintenzionato</def>'. 
+            «Dal punto di vista giuridico segna l'inizio della volontà di distinguere un'azione 
+            dolosa da quella colposa, mentre originarimente ciò interessava meno, contando 
+            solo il rusultato del danno» (<ref target="#Onesti1999">Francovich Onesti</ref>, 66).
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <xr type="see">V. <ref target="#haistan">haistan</ref>.</xr>
+
+          <etym resp="#Onesti1999">
+            Dall'agg. <lang>germ.</lang> *<mentioned>haist-</mentioned> '<def>asioso, aggressivo</def>', 
+            <mentioned>asto</mentioned> è forma latinizzata e flessa all'ablativo (II 
+            declinazione); c'è anche la possibilità, più remota, che che come avverbio rifletta 
+            l'avverbio di modo <lang>germ.</lang> in <m>-o</m> (come in <lang>gc.</lang> e 
+            <lang>aat.</lang>) tratto da aggettivi. Romanizzato nella fonetica, sempre senza <m>-h</m> inziale, e col monottongo. 
+            Dalla stessa radice germ. è entrato in italiano il prestito <mentioned>astio</mentioned>, che però discende da 
+            un sostantivo in *<m>-<g ref="imacr"/></m> (*<mentioned>hai(f)sti-z</mentioned>) ed è piuttosto di provenienza ostrogota.
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 65-66.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  AXEGIATO  ######### -->
+        <!-- FS: ho trovato questo termine nel file (datato a 2024) dell'Eporedianus.
+        Non l'ho trovato in Francovich Onesti, per cui nel Vaticano non è codificato,
+        tuttavia lascio qui il lemma per decidere cosa farne-->
+        <!-- ########################### -->
+        
+        <entry xml:id="axegiato">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  BARBA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="barba">
+          <form type="lemma">
+            <orth resp="#Onesti1999">barbas</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="masculine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme"></iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Zio paterno.</def>
+          </sense>
+          
+          <sense>
+            Sostantivo tardo-latino flesso come debole in <mentioned>-anis</mentioned>, <mentioned>-anem</mentioned> perché uscente in <m>-a</m>. 
+            Si trova in molti dialetti italiani settentrionali col significato di '<def>zio</def>', ma 
+            non è formazione germanica. La sua diffusione coincide con l'epoca longobarda e 
+            forse è entrato nel <lang>lgb.</lang> stesso, ma non si può propriamente considerare 
+            una voce longobarda.
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, 68.</bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  CAMPHIO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="camphio">
+          <form type="lemma">
+            <orth>camphio</orth>
+          	<orth resp="#Onesti1999">camfio</orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="masculine"></gen>
+            <number value="singular"></number>
+            <iType type="theme">*-jan</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def>Combattente, duellante.</def>
+          </sense>
+          
+          <sense n="2">
+            <def>Duello giudiziale.</def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          	Nomen agentis latinizzato. Dal <lang>germ.</lang> <mentioned>*kampja-n</mentioned> (<def>combattente</def>), 
+          	adattamento del <lang>lat.</lang> tardo <mentioned>campio</mentioned>, probabilmente derivante da <lang>lat.</lang> <mentioned>campus</mentioned> (<def>campo di battaglia</def>).
+          	La forma <lang>lgb.</lang> ha subito II LV (p>f),
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#Onesti1999">Francovich Onesti 1999, 71-72.</ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FABULA  ######### -->
+        <!-- FS: calco latino, codificato nel Vaticano,
+        bisogna decidere se includerlo o no-->
+        <!-- ########################### -->
+        
+        <entry xml:id="fabula">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FADERFIO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="faderfio">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FADRIN  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fadrin">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FAIDA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="faida">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FARA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fara">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FEGANGI  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fegangi">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FEGANGIT  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fegangit">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FEREHA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fereha">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FERQUIDO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="ferquido">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FRAIDA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fraida">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FULBORAN  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fulboran">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FULCFREE  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fulcfree">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  FULFREE  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="fulfree">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GAFAND  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gafand">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GAHAGIUM  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gahagium">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GAIDA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gaida">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GAIRETHINX  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gairethinx">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GAMAHALOS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gamahalos">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GASINDIUM  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gasindium">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GASTALDIUS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gastaldius">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GISEL  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gisel">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GISIL  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="gisil">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  GRABWORFIN  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="grabworfin">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  HAAMUND  ######### -->
+        <!-- FS: nei file già codificati l'ho trovato con questa grafia
+        anche se in Francovich Onesti è riportato "amund"-->
+        <!-- ########################### -->
+        
+        <entry xml:id="haamund">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  HAISTAN  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="haistan">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  HARIGAWERC  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="harigawerc">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  HARITRAIB  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="haritraib">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  HISCLO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="hisclo">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  HOBERUS  ######### -->
+        <!-- FS: nei file ho trovato questa grafia, anche se in
+        Francovich Onesti mi pare sia riportato "oberos"-->
+        <!-- ########################### -->
+        
+        <entry xml:id="hoberus">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  IDERZUN  ######### -->
+        <!-- FS: nei file ho trovato questa grafia, anche se
+        Francovich Onesti mi pare riporti "iderzon"-->
+        <!-- ########################### -->
+        
+        <entry xml:id="iderzun">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  LAUNEGILD  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="launegild">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  LIDINLAIB  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="lidinlaib">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  MARAAHVORF  ######### -->
+        <!-- FS: grafia trovata nei file, ma non sono per nulla
+        convinto sia quella riportata in Francovich Onesti, forse "mahrworfin"-->
+        <!-- ########################### -->
+        
+        <entry xml:id="marahvorf">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  META  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="meta">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  METFIO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="metfio">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  MODOLA  ######### -->
+        <!-- FS: trovato nei file, ma non mi risulta sia termine longobardo,
+        se non sbaglio compare in "hisclo id est modola"-->
+        <!-- ########################### -->
+        
+        <entry xml:id="modola">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  MORDH  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="mordh">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  MUNDIO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="mundio">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  MURIOTH  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="murioth">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  NOVERCA  ######### -->
+        <!-- FS: trovato nei file, non mi risulta compaia in Francovich Onesti -->
+        <!-- RRDT: non compare in Francovich Onesti perché è un parola latina -->
+        <!-- ########################### -->
+        
+        <entry xml:id="noverca">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  PANS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="pans">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  PLODRAUB  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="plodraub">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  PLOVUM  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="plovum">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  PULSLAHI  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="pulslahi">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  RAIRAUB  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="rairaub">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  RAPUER  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="rapuer">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  SALA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="sala">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  SCULCA  ######### -->
+        <!-- FS: verificare se termine longobardo, trovato nei file ma non sono sicuro sia corretto -->
+        <!-- ########################### -->
+        
+        <entry xml:id="sculca">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  SCULDAHIS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="sculdahis">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  SELPMUNDIA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="selpmundia">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  SNAIDA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="snadia">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  SONORPAIR  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="sonorpair">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  STOLESAZO  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="stolesazo">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  THINGARE  ######### -->
+        <!-- FS: nei file in molte occasioni ho trovato questo termine codificato usando "thinx"
+        ma in Francoich Onesti mi pare siano due voci diverse-->
+        <!-- ########################### -->
+        
+        <entry xml:id="thingare">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  THINX  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="thinx">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  THREUS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="threus">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WADIA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="wadia">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WALUPAUS  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="walupaus">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WAREGANG  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="waregang">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WECVORIN  ######### -->
+        <!-- FS: non sono convinto sia la grafia più corretta ma
+        l'ho trovato così nei file, su Francovich Onesti è "wegworin"-->
+        <!-- ########################### -->
+        
+        <entry xml:id="wecvorin">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WERGILD  ######### -->
+        <!-- FS: nei file viene utilizzato anche per "widrigild", ma in Francovich Onesti sono voci distinte
+        quindi anche nel vaticano utilizzo #wergild e #widrigil-->
+        <!-- ########################### -->
+        
+        <entry xml:id="wergild">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WIDRIGILD  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="widrigild">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+        
+        <!-- ########################### -->
+        <!-- #########  WIRDIBORA  ######### -->
+        <!-- ########################### -->
+        
+        <entry xml:id="wirdibora">
+          <form type="lemma">
+            <orth></orth>
+          </form>
+          
+          <gramGrp>
+            <pos value="noun"></pos>
+            <gen value="feminine"></gen>
+            <!-- <case value="nominative">nom</case> -->
+            <number value="singular"></number>
+            <iType type="theme">-i</iType>
+          </gramGrp>
+          
+          <cit type="main">
+            <quote></quote>
+            <ref target="#">ER </ref>
+          </cit>
+          
+          <form type="variants">
+            <orth> <ref target="#"></ref></orth>
+            <orth> <ref></ref></orth>
+            <orth> <ref></ref></orth>
+          </form>
+          
+          <sense n="1">
+            <def></def>
+          </sense>
+          
+          <sense n="2">
+            <def></def>
+          </sense>
+          
+          <cit>
+            <quote></quote>
+            <ref></ref>
+          </cit>
+          
+          <etym>
+          </etym>
+          
+          <listBibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+            <bibl><ref target="#"></ref></bibl>
+          </listBibl>
+        </entry>
+      <!-- ########################### -->
+      <!-- ########  aaaaaaa  ######## -->
+      <!-- ########################### -->
+      
+      <entry xml:id="aaaaaaa">
+        <form type="lemma">
+          <orth></orth>
+        </form>
+
+        <gramGrp>
+          <pos value="noun"/>
+          <gen value="feminine"/>
+          <number value="singular">sing</number>
+          <iType type="theme" value="-i"/>
+        </gramGrp>
+        
+        <!-- Le occorrenze del termine nel testo critico -->
+        
+        <cit type="main">
+          <!-- Marcare nel testo anche term e gloss? -->
+          <quote>Si quis contra inimicús pugnando collegam suum dimiserit aut astalin fecerit, id est si eum diceperit
+            et cum eum non laboraverit, animae suae incurrat periculum.</quote>
+          <!-- NB al momento il target punta alla riga o al paragrafo, in attesa di xml:id per il <term> sopra -->
+          <ref target="#CV188_p_019v_7">ER 7</ref>
+        </cit>
+        
+        <!-- inserire anche tutti i riferimenti ai vari testimoni??? -->
+        <cit type="witness">
+          <quote>id est si eum diceperit et cum eum non laboraverit</quote>
+          <ref target="#CV188_gloss_astalin">MS 2</ref>
+        </cit>
+        
+        <!-- Le forme grafiche alternative, per ogni testimone di cui abbiamo la 
+          trascrizione il ref contiene un target -->
+        
+        <form type="variants">
+          <orth> <ref target="#">MS </ref></orth>
+          <orth> <ref>MSS 1, 5, 8, 9, 10, 11; Gloss. Matr.</ref></orth>
+          <orth> <ref>MS 12</ref></orth>
+        </form>
+        
+        <!-- Il significato o i significati del termine -->
+        
+        <sense n="1">
+          <def></def>
+          Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa corrispondente.
+        </sense>
+        
+        <sense n="2">
+          <def></def>
+          Probabilmente una parola antica, tale da necessitare una spiegazione nella glossa corrispondente.
+        </sense>
+
+        <!-- Le occorrenze e le relative glosse in altri testi -->
+        
+        <cit>
+          <quote>Id <ex>est</ex> decipere</quote>
+          <ref>Gloss. Matr.</ref>
+        </cit>
+        
+        <!-- Una nota di commento/spiegazione relativa al testo -->
+        
+        <sense>Probabilmente una parola antica, tale da necessitare una spiegazione
+          nella glossa corrispondente.</sense>
+        
+        <!-- Note etimologiche, oltre al testo narrativo possono essere definite più precisamente
+          altre forme con sotto-<etym> (vedi articolo sulla codifica delle informazioni etimologiche) -->
+        
+        <etym>Formazione deverbale basata sul prefisso <m>a-</m>, <m>an-</m> unito alla radice del verbo
+          <mentioned>*staljan</mentioned>
+          <def>sottrarsi, sfuggire</def> (cfr. ia. <mentioned>stelan</mentioned>
+          <def>sottrarsi</def>), con suffisso <m>-ini-</m> tipico dei sostantivi femminili.
+        </etym>
+        
+        <!-- Bibliografia -->
+        
+        <listBibl>
+          <bibl><ref target="#Onesti1999">Francovich Onesti 1999</ref>, pp. 54-5</bibl>
+          <bibl><ref target="#PrinciBraccini1994">Princi Braccini 1994</ref>, pp. 76-8</bibl>
+          <bibl><ref target="#Molinari1989">Molinari 1989</ref>, pp. 233-4</bibl>
+        </listBibl>
+      </entry>
+      
+      <!-- ########################### -->
+      <!-- #########  empty  ######### -->
+      <!-- ########################### -->
+      
+      <entry xml:id="eeeee">
+        <form type="lemma">
+          <orth></orth>
+        </form>
+
+        <gramGrp>
+          <pos value="noun"></pos>
+          <gen value="feminine"></gen>
+          <!-- <case value="nominative">nom</case> -->
+          <number value="singular"></number>
+          <iType type="theme">-i</iType>
+        </gramGrp>
+        
+        <cit type="main">
+          <quote></quote>
+          <ref target="#">ER </ref>
+        </cit>
+        
+        <form type="variants">
+          <orth> <ref target="#"></ref></orth>
+          <orth> <ref></ref></orth>
+          <orth> <ref></ref></orth>
+        </form>
+        
+        <sense n="1">
+          <def></def>
+        </sense>
+        
+        <sense n="2">
+          <def></def>
+        </sense>
+
+        <cit>
+          <quote></quote>
+          <ref></ref>
+        </cit>
+        
+        <etym>
+        </etym>
+        
+        <listBibl>
+          <bibl><ref target="#"></ref></bibl>
+          <bibl><ref target="#"></ref></bibl>
+          <bibl><ref target="#"></ref></bibl>
+        </listBibl>
+      </entry>
+        
+      </div>
+
+    </body>
+  </text>
+
+</TEI>
